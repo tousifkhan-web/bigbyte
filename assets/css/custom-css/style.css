@@ -245,7 +245,7 @@ ul {
 /* about ***************************************** */
 
 #about .container-ctm > div {
-  padding: 60px;
-  border-radius: 30px;
+  padding: 200px 60px;
   background-color: var(--bg-blue);
+  clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 90%);
 }
