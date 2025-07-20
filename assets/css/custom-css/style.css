@@ -144,6 +144,10 @@ a {
   padding-bottom: 15px;
 }
 
+#header .container-ctm .logo {
+  z-index: 100;
+}
+
 #header .container-ctm .logo img {
   width: clamp(6.25rem, 3.3654rem + 8.0128vw, 9.375rem);
 }
@@ -177,7 +181,6 @@ a {
 /* banner **************************************************** */
 
 #banner {
-  /* height: 90vh; */
   background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0) 0%,
