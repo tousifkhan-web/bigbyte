@@ -65,11 +65,16 @@
   #banner .hd1 {
     text-align: center;
   }
+
   #banner .left .bnr-decoration {
     max-width: 100%;
   }
   #banner .left .bnr-p-txt {
     text-align: center;
+  }
+
+  #banner .spl-btn {
+    margin: 0px auto;
   }
   #values .container-ctm > div {
     padding: 100px 60px;
