@@ -166,9 +166,9 @@ ul {
 
 /* banner **************************************************** */
 
-#banner .container-ctm {
+#banner {
   height: 90vh;
-
+  background-image: url(../../image/Group2.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -211,7 +211,7 @@ ul {
 
 .spl-btn {
   text-decoration: none;
-  color: #171717;
+  color: var(--white);
   font-family: var(--fontfamily1);
   font-size: 18px;
   font-style: normal;
@@ -222,6 +222,7 @@ ul {
   display: inline-block;
   position: relative;
   background-color: var(--white);
+  z-index: 3;
 }
 
 .spl-btn::before {
@@ -245,7 +246,7 @@ ul {
 }
 
 .spl-btn:hover {
-  color: #171717;
+  color: var(--white);
 }
 
 .spl-btn:hover::before {
@@ -253,6 +254,10 @@ ul {
 }
 
 /* about ***************************************** */
+#about {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 
 #about .container-ctm > div {
   padding: 200px 60px;
@@ -449,3 +454,5 @@ ul {
   font-weight: 300;
   line-height: normal;
 }
+
+/* footer **************************************************** */
