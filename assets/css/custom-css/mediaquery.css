@@ -44,6 +44,12 @@
   .container-ctm {
     max-width: 720px;
   }
+  #contact .container-ctm > .contact-cta {
+    flex-direction: column;
+  }
+  #contact .container-ctm > .contact-cta .left > p {
+    text-align: center;
+  }
 }
 
 /* // `md` applies to small devices (landscape phones, less than 768px) */
@@ -100,5 +106,8 @@
 
   #package .bottom {
     margin-top: 30px;
+  }
+  #contact .container-ctm > .contact-cta {
+    padding: 50px;
   }
 }
