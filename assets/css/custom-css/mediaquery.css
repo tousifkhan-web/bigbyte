@@ -9,12 +9,33 @@
   .container-ctm {
     max-width: 1140px;
   }
+  #values div.bottom .card-ctm > .arrow {
+    max-width: 50%;
+    right: -60px;
+  }
+  #values div.bottom .card3 > .arrow {
+    top: 0px;
+  }
+  #values div.bottom .card4 {
+    margin-bottom: 150px;
+  }
 }
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1200px) {
   .container-ctm {
     max-width: 960px;
+  }
+  #values div.bottom {
+    margin-top: 0px;
+  }
+  #values div.bottom .card2,
+  #values div.bottom .card3,
+  #values div.bottom .card4 {
+    margin-bottom: 0px;
+  }
+  #values div.bottom .card-ctm > .arrow {
+    display: none;
   }
 }
 
@@ -44,11 +65,40 @@
   #banner .left .bnr-p-txt {
     text-align: center;
   }
+  #values .container-ctm > div {
+    padding: 100px 60px;
+    background-color: var(--bg-blue);
+    clip-path: polygon(0 0, 100% 5%, 100% 97%, 0% 100%);
+  }
+  #package .bottom .card-wrap {
+    padding: 30px;
+  }
 }
 
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) {
   .container-ctm {
     max-width: 100%;
+  }
+  #values .container-ctm > div {
+    padding: 100px 15px;
+  }
+  .hd2,
+  .hd3 {
+    text-align: center;
+  }
+  #testimonial,
+  #values,
+  #package {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #package .top {
+    flex-direction: column;
+  }
+
+  #package .bottom {
+    margin-top: 30px;
   }
 }
