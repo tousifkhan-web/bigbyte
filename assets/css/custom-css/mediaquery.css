@@ -2,6 +2,10 @@
   .container-ctm {
     max-width: 1320px;
   }
+  #values div.bottom .card-ctm > .arrow {
+    max-width: 50%;
+    right: -60px;
+  }
 }
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
@@ -9,10 +13,7 @@
   .container-ctm {
     max-width: 1140px;
   }
-  #values div.bottom .card-ctm > .arrow {
-    max-width: 50%;
-    right: -60px;
-  }
+
   #values div.bottom .card3 > .arrow {
     top: 0px;
   }
@@ -100,9 +101,7 @@
     /* background-color: var(--bg-blue); */
     clip-path: polygon(0 0, 100% 5%, 100% 97%, 0% 100%);
   }
-  #package .bottom .card-wrap {
-    padding: 30px;
-  }
+
   #values div.bottom .card-ctm > .arrow {
     display: none;
   }
@@ -159,6 +158,9 @@
 
   #package .top {
     flex-direction: column;
+  }
+  #package .top .right {
+    display: none !important;
   }
 
   #package .bottom {
