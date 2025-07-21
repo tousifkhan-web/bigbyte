@@ -5,7 +5,7 @@
 }
 
 :root {
-  /* color  **************************************/
+  /* color  ********************************************************/
 
   --blue: #27156e;
   --blue-light: #74c4ef;
@@ -25,7 +25,7 @@
     rgba(117, 197, 240, 1) 100%
   );
 
-  /* font family  ***********************************/
+  /* font family  **************************************************/
 
   --fontfamily1: "Raleway", sans-serif;
   --fontfamily2: "Urbanist", sans-serif;
@@ -44,7 +44,6 @@ p {
 img {
   display: inline-block;
   max-width: 100%;
-  /* height: auto; */
 }
 ul {
   padding-left: 0;
@@ -75,6 +74,8 @@ a {
   padding-right: 20px;
 }
 
+/* gradient text *******************************/
+
 .spl-txt {
   color: #281670;
   background-image: linear-gradient(90deg, var(--blue), var(--blue-light) 100%);
@@ -82,6 +83,63 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* gradient button *************************** */
+
+.spl-btn {
+  text-decoration: none;
+  color: var(--btn-txt-color);
+  font-family: var(--fontfamily1);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 12px 64px 12px 32px;
+  border-radius: 22px;
+  position: relative;
+  background-color: var(--white);
+  z-index: 3;
+}
+
+.spl-btn::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  border-radius: 22px;
+  background-image: linear-gradient(
+    to right,
+    var(--blue) 0%,
+    var(--blue-light) 51%,
+    var(--blue) 100%
+  );
+  z-index: -1;
+  background-size: 200% auto;
+  border-radius: 24px;
+  transition: 0.5s;
+}
+
+.spl-btn::after {
+  content: "\f178";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--btn-txt-color);
+}
+
+.spl-btn:hover {
+  color: var(--btn-txt-color);
+}
+
+.spl-btn:hover::before {
+  background-position: right center;
+}
+
+/* custom heading *************************** */
 
 .hd1 {
   font-family: var(--fontfamily2);
@@ -130,7 +188,7 @@ a {
   margin-bottom: 25px;
 }
 
-/* header ********************************************** */
+/* header ******************************************************************* */
 
 #header {
   border-bottom: 1px solid rgba(228, 228, 228, 0.64);
@@ -176,6 +234,56 @@ a {
 
 #header .container-ctm .btn-ctm button:hover {
   background-position: right center;
+}
+
+/* menu ********************************************* */
+
+#header .navbar .nav-item .nav-link {
+  color: var(--grey-dark);
+  font-family: var(--fontfamily1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+#header .navbar .nav-item .nav-link:hover,
+#header .navbar .nav-item .active,
+#header .navbar .nav-item:active {
+  color: var(--blue);
+  font-weight: 800;
+}
+
+#header .navbar .nav-item .active {
+  color: var(--blue);
+  font-weight: 800;
+}
+
+#header .mobile-menu-toggle {
+  border: none;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 225, 0);
+  color: var(--blue) !important;
+}
+
+#header .mobile-menu-toggle i {
+  font-size: 20px;
+}
+
+#header .offcanvas-body li {
+  margin-bottom: 20px;
+}
+
+#header .offcanvas-body li a {
+  color: var(--grey-dark);
+  font-family: var(--fontfamily1);
+  font-size: 20px;
+}
+
+#header .offcanvas-body li a:hover,
+#header .offcanvas-body li a:active {
+  color: var(--blue);
+  font-weight: 800;
 }
 
 /* banner **************************************************** */
@@ -233,59 +341,6 @@ a {
   font-weight: 500;
   line-height: normal;
   gap: 10px;
-}
-
-.spl-btn {
-  text-decoration: none;
-  color: var(--btn-txt-color);
-  font-family: var(--fontfamily1);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  padding: 12px 64px 12px 32px;
-  border-radius: 22px;
-  position: relative;
-  background-color: var(--white);
-  z-index: 3;
-}
-
-.spl-btn::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  bottom: -2px;
-  right: -2px;
-  border-radius: 22px;
-  background-image: linear-gradient(
-    to right,
-    var(--blue) 0%,
-    var(--blue-light) 51%,
-    var(--blue) 100%
-  );
-  z-index: -1;
-  background-size: 200% auto;
-  border-radius: 24px;
-  transition: 0.5s;
-}
-
-.spl-btn::after {
-  content: "\f178";
-  font-family: "Font Awesome 6 Free";
-  position: absolute;
-  right: 32px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--btn-txt-color);
-}
-
-.spl-btn:hover {
-  color: var(--btn-txt-color);
-}
-
-.spl-btn:hover::before {
-  background-position: right center;
 }
 
 /* about ***************************************** */
