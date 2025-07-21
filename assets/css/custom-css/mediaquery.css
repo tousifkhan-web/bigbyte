@@ -21,11 +21,24 @@
     margin-bottom: 150px;
   }
 }
+@media (min-width: 1200px) {
+  #solution .bottom-extra {
+    display: none;
+  }
+}
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1200px) {
   .container-ctm {
     max-width: 960px;
+  }
+
+  #solution .bottom {
+    height: 600px;
+  }
+
+  #solution .bottom .center-box-6 {
+    display: none;
   }
 
   #values div.bottom {
@@ -170,6 +183,25 @@
   #about .container-ctm > div {
     padding: 100px 15px;
   }
+
+  /* #solution .bottom {
+    display: none;
+  } */
+
+  #solution .bottom .center-box-2,
+  #solution .bottom .center-box-3,
+  #solution .bottom .center-box-4,
+  #solution .bottom .center-box-5 {
+    display: none;
+  }
+
+  #solution .bottom-extra {
+    margin-bottom: 0px;
+  }
+
+  #solution .bottom {
+    height: 400px;
+  }
   #values .container-ctm > div {
     padding: 100px 15px;
   }
@@ -178,6 +210,7 @@
     text-align: center;
   }
   #about,
+  #solution,
   #testimonial,
   #values,
   #package {
