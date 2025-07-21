@@ -71,6 +71,16 @@
   #header .container-ctm .btn-ctm {
     display: none;
   }
+  #about .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about .right h3,
+  #about .right p {
+    text-align: center;
+  }
   #contact .container-ctm > .contact-cta {
     flex-direction: column;
   }
@@ -83,6 +93,18 @@
 @media (max-width: 768px) {
   .container-ctm {
     max-width: 540px;
+  }
+
+  #banner .container-ctm {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    row-gap: 30px;
+  }
+
+  #banner .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   #banner .hd1 {

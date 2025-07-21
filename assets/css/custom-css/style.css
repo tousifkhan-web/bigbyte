@@ -90,7 +90,8 @@ a {
   text-decoration: none;
   color: var(--btn-txt-color);
   font-family: var(--fontfamily1);
-  font-size: 18px;
+  font-size: clamp(1rem, 0.917rem + 0.231vw, 1.125rem);
+  /* scale between 16px at 576px and 18px at 1440px */
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -143,8 +144,8 @@ a {
 
 .hd1 {
   font-family: var(--fontfamily2);
-  font-size: clamp(1.875rem, -0.208rem + 5.787vw, 5rem);
-  /* scale between 30px at 576px and 80px at 1440px */
+  font-size: clamp(1.875rem, 0.625rem + 3.472vw, 3.75rem);
+  /* scale between 30px at 576px and 60px at 1440px */
   font-weight: 700;
   text-transform: capitalize;
   color: var(--heading-color);
@@ -152,7 +153,8 @@ a {
 
 .hd2 {
   font-family: var(--fontfamily2);
-  font-size: clamp(1.5rem, -0.2885rem + 4.9679vw, 3.4375rem);
+  font-size: clamp(1.5rem, 0.208rem + 3.588vw, 3.438rem);
+  /* scale between 24px at 576px and 55px at 1440px */
   font-weight: 700;
   text-transform: capitalize;
   color: var(--heading-color);
@@ -160,7 +162,8 @@ a {
 
 .hd3 {
   font-family: var(--fontfamily2);
-  font-size: clamp(1.5rem, 0.4615rem + 2.8846vw, 2.625rem);
+  font-size: clamp(1.5rem, 0.833rem + 1.852vw, 2.5rem);
+  /* scale between 24px at 576px and 40px at 1440px */
   font-weight: 800;
   text-transform: capitalize;
   color: var(--grey-dark);
@@ -311,6 +314,7 @@ a {
   max-width: 70%;
   height: 2px;
   display: block;
+  margin-bottom: 20px;
 }
 
 #banner .left .bnr-p-txt {
@@ -321,15 +325,23 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-}
-
-#banner .right img {
-  max-width: 100%;
-  height: auto;
+  margin-bottom: 20px;
 }
 
 #banner .left ul {
-  list-style-image: url(../../image/bullet.webp);
+  margin-bottom: 30px;
+}
+
+#banner .left ul li {
+  margin-bottom: 15px;
+}
+#banner .left ul li > div > img {
+  max-width: 15px;
+  height: 15px;
+}
+#banner .right img {
+  max-width: 100%;
+  height: auto;
 }
 
 #banner .left ul li {
