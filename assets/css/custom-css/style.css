@@ -288,6 +288,9 @@ a {
   color: var(--blue);
   font-weight: 800;
 }
+ul.navbar-nav {
+    gap: 25px;
+}
 
 /* banner **************************************************** */
 
