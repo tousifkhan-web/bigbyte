@@ -25,9 +25,7 @@ p.bnr-p-txt {
   line-height: normal;
 }
 
-/* career section **************************** */
-
-/* #career section****************************** */
+/* career section****************************** */
 
 #career-sec {
   margin-top: 100px;
@@ -62,8 +60,6 @@ p.bnr-p-txt {
 
 #career-sec .career-card-ctm:hover {
   background: #ececff;
-}
-#career-sec .career-card-ctm .div1 {
 }
 
 #career-sec .career-card-ctm .div1 > p {
