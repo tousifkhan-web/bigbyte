@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- owl-carousel --------------------------------------------------------------------------------- -->
+    <link
+      rel="stylesheet"
+      href="assets/css/owlcarousel-css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/owlcarousel-css/owl.theme.default.min.css"
+    />
+
+    <!-- bootstrap ----------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/bootstrap-css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/bootstrap-css/bootstrap-reboot.min.css"
+    />
+
+    <!-- font-awesome -------------------------------------------------------------------------------- -->
+    <link
+      rel="stylesheet"
+      href="assets/css/fontawesome/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/fontawesome/css/brands.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome/css/solid.min.css" />
+
+    <!-- custom css --------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/custom-css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom-css/llm-gen-ai.css" />
+
+    <!-- mediaquery --------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/custom-css/mediaquery.css" />
+  </head>
+  <body>
+    <!-- header -------------------------------------------------------------------------------- -->
+
+    <header class="container-fluid" id="header">
+      <div
+        class="container-ctm d-flex justify-content-between align-items-center"
+      >
+        <div class="logo navbar-brand">
+          <a href="index.html">
+            <img src="assets/image/logo.webp" alt="Bigbyte Logo" />
+          </a>
+        </div>
+
+        <!-- menu --------------------------------------------------------------- -->
+
+        <nav class="navbar navbar-expand-lg">
+          <div class="">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Market</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Mobile menu toogle ------------------------------------------------- -->
+        <button
+          class="mobile-menu-toggle"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasExample"
+          role="button"
+          aria-controls="offcanvasExample"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- mobile menu overlay ------------------------------------------------- -->
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+              Offcanvas
+            </h5> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav
+              class="navbar navbar-expand align-items-center justify-content-center"
+            >
+              <div class="">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul
+                    class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column align-items-center"
+                  >
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Market</a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Services
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+
+        <!-- side button ---------------------------------------------------------------------- -->
+
+        <div class="btn-ctm">
+          <button id="#">Login</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- llm banner ------------------------------------------------------------------------------------ -->
+
+    <section class="container-fluid" id="llm-banner">
+      <div class="container-ctm row align-items-center">
+        <div class="col-md-12 align-items-center banner-text">
+          <h1 class="abt-hd1">
+            We're ready to
+            <span class="spl-txt"
+              >help you<br />
+              transform your business</span
+            >
+          </h1>
+          <span class="bnr-decoration"></span>
+          <p class="bnr-p-txt">
+            While others promise digital transformation, we deliver measurable
+            outcomes: 30% <br />cost reduction, 40% efficiency gains, and $50M+
+            in proven savings for Fortune 500 clients
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- llm about section------------------------------------------------------------ -->
+
+    <section class="container-fluid" id="about">
+      <div class="container-ctm">
+        <div class="row justify-content-between align-items-center gap-5">
+          <div class="left col-lg-5">
+            <img src="assets/image/about-img.webp" alt="" srcset="" />
+          </div>
+          <div class="right col-lg-6">
+            <h3 class="hd3 mb-3">
+              While Competitors Struggle with
+              <span class="spl-txt">Digital Transformation</span>, You'll Lead
+              with AI Get measurable results in 60-90 days with proven
+              methodologies
+            </h3>
+            <p class="mb-4">
+              In today's AI-driven market, businesses need more than incremental
+              improvements—they need transformation that delivers bottom-line
+              impact. Bigbyte implements reliable AI solutions that become the
+              technology backbone powering smarter decisions, streamlined
+              operations, and faster innovation. Our proven methodologies
+              compress innovation cycles and bring new capabilities to market
+              while maintaining security and compliance your stakeholders trust.
+            </p>
+            <div>
+              <a class="spl-btn" href="#">Transform Your Business</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- llm portfolio section ------------------------------------------------------- -->
+    <section class="container-fluid" id="llm-portfolio">
+      <div class="container-ctm">
+        <h2 class="hd2">
+          Enterprise AI Solutions <br /><span class="spl-txt">Portfolio </span>
+        </h2>
+        <div class="row bottom">
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/Choose Your Cleaning Service.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">Your Success Partner</p>
+            <p class="mb-3">
+              Implement comprehensive AI governance frameworks that ensure
+              responsible deployment, regulatory compliance, and enterprise
+              security. Our governance solutions provide transparency and
+              control mechanisms essential for enterprise AI adoption
+            </p>
+            <ul>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />AI Ethics
+                & Bias Monitoring
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />AI Ethics
+                & Bias Monitoring
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />AI Ethics
+                & Bias Monitoring
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/Choose Your Cleaning Service.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">Your Success Partner</p>
+            <p class="mb-3">
+              Implement comprehensive AI governance frameworks that ensure
+              responsible deployment, regulatory compliance, and enterprise
+              security. Our governance solutions provide transparency and
+              control mechanisms essential for enterprise AI adoption
+            </p>
+            <ul>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />AI Ethics
+                & Bias Monitoring
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />AI Ethics
+                & Bias Monitoring
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />AI Ethics
+                & Bias Monitoring
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/Choose Your Cleaning Service.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">Your Success Partner</p>
+            <p class="mb-3">
+              Implement comprehensive AI governance frameworks that ensure
+              responsible deployment, regulatory compliance, and enterprise
+              security. Our governance solutions provide transparency and
+              control mechanisms essential for enterprise AI adoption
+            </p>
+            <ul>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />AI Ethics
+                & Bias Monitoring
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />AI Ethics
+                & Bias Monitoring
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />AI Ethics
+                & Bias Monitoring
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/Choose Your Cleaning Service.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">Your Success Partner</p>
+            <p class="mb-3">
+              Implement comprehensive AI governance frameworks that ensure
+              responsible deployment, regulatory compliance, and enterprise
+              security. Our governance solutions provide transparency and
+              control mechanisms essential for enterprise AI adoption
+            </p>
+            <ul>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />AI Ethics
+                & Bias Monitoring
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />AI Ethics
+                & Bias Monitoring
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />AI Ethics
+                & Bias Monitoring
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/Choose Your Cleaning Service.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">Your Success Partner</p>
+            <p class="mb-3">
+              Implement comprehensive AI governance frameworks that ensure
+              responsible deployment, regulatory compliance, and enterprise
+              security. Our governance solutions provide transparency and
+              control mechanisms essential for enterprise AI adoption
+            </p>
+            <ul>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />AI Ethics
+                & Bias Monitoring
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />AI Ethics
+                & Bias Monitoring
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />AI Ethics
+                & Bias Monitoring
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- package ----------------------------------------------------------------------------------- -->
+
+    <section class="container-fluid" id="package">
+      <div class="container-ctm">
+        <div class="top d-flex justify-content-between align-items-center">
+          <div class="left">
+            <h2 class="hd2">
+              Your <span class="spl-txt">AI transformation</span>
+            </h2>
+            <h2 class="hd2">Package Includes</h2>
+          </div>
+          <div class="right d-flex gap-2" id="package-carousel-nav">
+            <div
+              class="d-flex justify-content-center align-items-center"
+              id="package-nav-left"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center"
+              id="package-nav-right"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="owl-carousel owl-theme package-slider bottom">
+          <div class="item">
+            <div
+              class="card-ctm d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="assets/image/package-icon-1.webp"
+                class="mb-4"
+                srcset=""
+              />
+              <h4 class="hd4 text-center mb-4">
+                90-Day Implementation Roadmap
+              </h4>
+              <p class="card-txt text-center">
+                Get a clear strategy that aligns AI investments with revenue
+                growth, complete with timelines, milestones, and success
+                metrics.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="card-ctm d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="assets/image/package-icon-2.webp"
+                class="mb-4"
+                srcset=""
+              />
+              <h4 class="hd4 text-center mb-4">
+                Enterprise-Ready Implementation
+              </h4>
+              <p class="card-txt text-center">
+                Reliable AI solutions that scale with robust security and
+                compliance safeguards, ensuring 99.9% uptime and regulatory
+                adherence
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="card-ctm d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="assets/image/package-icon-3.webp"
+                class="mb-4"
+                srcset=""
+              />
+              <h4 class="hd4 text-center mb-4">Expert knowledge Transfer</h4>
+              <p class="card-txt text-center">
+                Access specialized expertise and proven methodologies that
+                accelerate time-to-market by 60% and build internal AI
+                capabilities
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="card-ctm d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="assets/image/package-icon-4.webp"
+                class="mb-4"
+                srcset=""
+              />
+              <h4 class="hd4 text-center mb-4">
+                Intelligent Process Automation
+              </h4>
+              <p class="card-txt text-center">
+                Eliminate bottlenecks and reduce manual work by 50% through
+                AI-driven workflow optimization that works reliably from day one
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="card-ctm d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="assets/image/package-icon-5.webp"
+                class="mb-4"
+                srcset=""
+              />
+              <h4 class="hd4 text-center mb-4">Data-Driven Decision Support</h4>
+              <p class="card-txt text-center">
+                Transform enterprise data into profitable insights through
+                advanced analytics that reveal opportunities and predict market
+                trends
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="card-ctm d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="assets/image/package-icon-6.webp"
+                class="mb-4"
+                srcset=""
+              />
+              <h4 class="hd4 text-center mb-4">
+                Security & Compliance Framework
+              </h4>
+              <p class="card-txt text-center">
+                Comprehensive safeguards for AI ethics, data security, and
+                regulatory compliance that maintain stakeholder trust while
+                enabling innovation
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- values ------------------------------------------------------------------------------------- -->
+
+    <section class="container-fluid" id="values">
+      <div class="container-ctm">
+        <div class="">
+          <div class="top">
+            <img src="assets/image/values-top-img.webp" alt="" srcset="" />
+            <h2 class="hd2">
+              <span class="spl-txt">Core Values</span> That Drive Your Success
+            </h2>
+          </div>
+          <div class="bottom row align-items-end">
+            <div class="col-md-6 col-xl-3 g-3">
+              <div class="card-ctm card1 p-4 text-center">
+                <img src="assets/image/values-icon-1.webp" alt="" srcset="" />
+                <h4 class="hd4 mt-3 mb-3">Practical Innovation</h4>
+                <p>
+                  We deliver measurable business outcomes, not just technology.
+                  Every solution comes with clear success metrics, timeline
+                  commitments, and guaranteed results that impact your bottom
+                  line. Our track record speaks for itself.
+                </p>
+                <img
+                  class="arrow"
+                  src="assets/image/arrow-1.webp"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3 g-3">
+              <div class="card-ctm card2 p-4 text-center">
+                <img src="assets/image/values-icon-2.webp" alt="" srcset="" />
+                <h4 class="hd4 mt-3 mb-3">Smart follow-up questions</h4>
+                <p>
+                  We focus on AI solutions that work in the real world. Our
+                  approach combines cutting-edge technology with practical
+                  business sense, ensuring every implementation delivers
+                  immediate value and long-term competitive advantage.
+                </p>
+                <img
+                  class="arrow"
+                  src="assets/image/arrow-2.webp"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3 g-3">
+              <div class="card-ctm card3 p-4 text-center">
+                <img src="assets/image/values-icon-3.webp" alt="" srcset="" />
+                <h4 class="hd4 mt-3 mb-3">Partnership Approach</h4>
+                <p>
+                  We work as an extension of your team, not an external vendor.
+                  Our collaborative process eliminates communication gaps,
+                  accelerates decision-making, and ensures knowledge transfer
+                  that empowers your organization.
+                </p>
+                <img
+                  class="arrow"
+                  src="assets/image/arrow-1.webp"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3 g-3">
+              <div class="card-ctm card4 p-4 text-center">
+                <img src="assets/image/values-icon-3.webp" alt="" srcset="" />
+                <h4 class="hd4 mt-3 mb-3">Your Success First</h4>
+                <p>
+                  Your business goals drive every decision we make. We measure
+                  our success by your results—increased revenue, reduced costs,
+                  improved efficiency, and market leadership. When you win, we
+                  win.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- llm-impact section ---------------------------------------------------------------- -->
+
+    <section class="container-fluid" id="llm-impact">
+      <div class="container-ctm">
+        <h2 class="hd2">
+          Enterprise AI Solutions <br /><span class="spl-txt">Portfolio </span>
+        </h2>
+        <div class="buttom-wrap">
+          <div class="row align-items-center justify-content-center mb-4">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/Image.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center">
+                <div class="num me-4">
+                  <p>01</p>
+                </div>
+                <p class="hd4">Place of Mind</p>
+              </div>
+              <div class="d-flex">
+                <div class="num-txt me-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="hd4">
+                  We understand how crucial it is for you to trust the walker
+                  you entrust with your beloved pup, and we share that sentiment
+                  wholeheartedly.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row align-items-center justify-content-center flex-row-reverse mb-4"
+          >
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/Image.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center flex-row-reverse">
+                <div class="num ms-4">
+                  <p>01</p>
+                </div>
+                <p class="hd4">Place of Mind</p>
+              </div>
+              <div class="d-flex flex-row-reverse">
+                <div class="num-txt ms-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="text-end">
+                  We understand how crucial it is for you to trust the walker
+                  you entrust with your beloved pup, and we share that sentiment
+                  wholeheartedly.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center justify-content-center mb-4">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/Image.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center">
+                <div class="num me-4">
+                  <p>01</p>
+                </div>
+                <p class="hd4">Place of Mind</p>
+              </div>
+              <div class="d-flex">
+                <div class="num-txt me-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="hd4">
+                  We understand how crucial it is for you to trust the walker
+                  you entrust with your beloved pup, and we share that sentiment
+                  wholeheartedly.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row align-items-center justify-content-center flex-row-reverse"
+          >
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/Image.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center flex-row-reverse">
+                <div class="num ms-4">
+                  <p>01</p>
+                </div>
+                <p class="hd4">Place of Mind</p>
+              </div>
+              <div class="d-flex flex-row-reverse">
+                <div class="num-txt ms-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="text-end">
+                  We understand how crucial it is for you to trust the walker
+                  you entrust with your beloved pup, and we share that sentiment
+                  wholeheartedly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -------------------------------------------------------------------------------------- -->
+    <footer class="containerfluid" id="footer">
+      <div class="container-ctm row g-4">
+        <div class="footer-col-1 col-xl-3 col-md-6 col-12">
+          <a href="index.html">
+            <img src="assets/image/logo.webp" alt="" srcset=""
+          /></a>
+          <p>
+            We transform business vision into market-leading digital solutions.
+            Our enterprise-grade implementations drive innovation, operational
+            excellence, and sustainable competitive advantage.
+          </p>
+        </div>
+        <div class="footer-col-2 col-xl-2 col-md-4 col-6">
+          <h5 class="hd5">Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="">Career</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-3 col-xl-3 col-md-5 col-12">
+          <h5 class="hd5">Services</h5>
+          <ul>
+            <li><a href="">LLMs & Gen AI Strategy</a></li>
+            <li><a href="">Cloud Services & Platform</a></li>
+            <li><a href="">Big Data, Analytics & BI</a></li>
+            <li><a href="">Network & Optical Engineering</a></li>
+            <li><a href="">Cybersecurity</a></li>
+            <li><a href="">Enterprise Consultation</a></li>
+            <li><a href="">Product Engineering</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-4 col-xl-2 col-md-3 col-6">
+          <h5 class="hd5">Industries</h5>
+          <ul>
+            <li><a href="">Manufacturing </a></li>
+            <li><a href="">HealthCare</a></li>
+            <li><a href="">Retail</a></li>
+            <li><a href="">Banking & Finance </a></li>
+            <li><a href="">Insurance</a></li>
+            <li><a href="">Digital(IOT)</a></li>
+            <li><a href="">Education</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-5 col-xl-2 col-md-6">
+          <h5 class="hd5">Follow Us</h5>
+          <ul class="d-flex align-items-center">
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-gitlab"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-telegram"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-figma"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <svg
+          class="editorial"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 12"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    58 18 88 18
+    v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2" />
+            <use xlink:href="#gentle-wave" x="50" y="3" fill="#3461c1" />
+            <use xlink:href="#gentle-wave" x="50" y="6" fill="#2d55aa" />
+          </g>
+        </svg>
+      </div>
+    </footer>
+
+    <!-- javascript --------------------------------------------------------------------------------- -->
+
+    <!-- jquery ------------------------------------------------------------------------------------- -->
+    <script src="assets/js/jquery-js/jquery-3.7.1.min.js"></script>
+
+    <!-- bootstrap ----------------------------------------------------------------------------------- -->
+    <script src="assets/js/bootstrap-js/bootstrap.bundle.min.js"></script>
+
+    <!-- owl-carousel --------------------------------------------------------------------------------- -->
+    <script src="assets/js/owlcarousel-js/owl.carousel.min.js"></script>
+
+    <!-- custom js------------------------------------------------------------------------------------ -->
+    <script src="assets/js/custom-js/script.js"></script>
+  </body>
+</html>

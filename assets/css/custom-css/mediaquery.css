@@ -173,6 +173,12 @@
   #footer .footer-col-5 ul {
     justify-content: center;
   }
+  #llm-portfolio .bottom > div {
+    align-items: center;
+  }
+  #llm-portfolio .bottom > div p:nth-child(3) {
+    text-align: center;
+  }
 }
 
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
@@ -214,7 +220,8 @@
   #testimonial,
   #values,
   #package,
-  #career-sec {
+  #career-sec,
+  #llm-portfolio {
     margin-top: 50px;
     margin-bottom: 50px;
   }
@@ -231,5 +238,8 @@
   }
   #contact .container-ctm > .contact-cta {
     padding: 50px;
+  }
+  #llm-portfolio .bottom > div {
+    padding: 30px 0px;
   }
 }
