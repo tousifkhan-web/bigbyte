@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- owl-carousel --------------------------------------------------------------------------------- -->
+    <link
+      rel="stylesheet"
+      href="assets/css/owlcarousel-css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/owlcarousel-css/owl.theme.default.min.css"
+    />
+
+    <!-- bootstrap ----------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/bootstrap-css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/bootstrap-css/bootstrap-reboot.min.css"
+    />
+
+    <!-- font-awesome -------------------------------------------------------------------------------- -->
+    <link
+      rel="stylesheet"
+      href="assets/css/fontawesome/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/fontawesome/css/brands.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome/css/solid.min.css" />
+
+    <!-- custom css --------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/custom-css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom-css/manufacturing.css" />
+ <link rel="stylesheet" href="assets/css/custom-css/retail.css" />
+    <!-- mediaquery --------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/custom-css/mediaquery.css" />
+  </head>
+  <body>
+    <!-- header -------------------------------------------------------------------------------- -->
+
+    <header class="container-fluid" id="header">
+      <div
+        class="container-ctm d-flex justify-content-between align-items-center"
+      >
+        <div class="logo navbar-brand">
+          <a href="index.html">
+            <img src="assets/image/logo.webp" alt="Bigbyte Logo" />
+          </a>
+        </div>
+
+        <!-- menu --------------------------------------------------------------- -->
+
+        <nav class="navbar navbar-expand-lg">
+          <div class="">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">Company</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="llm-gen-ai.html"
+                        >LLMs & Gen AI Strategy</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="cloud-service.html"
+                        >Cloud Services & Platform</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="big-data.html"
+                        >Big Data, Analytics & BI</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="enterprise.html"
+                        >Enterprise Consultation</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Industries
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="manufacturing.html"
+                        >Manufacturing
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="healthcare.html">HealthCare </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="retail.html">Retail</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="digital.html">Digital(IOT)</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="career.html">Careers</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Mobile menu toogle ------------------------------------------------- -->
+        <button
+          class="mobile-menu-toggle"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasExample"
+          role="button"
+          aria-controls="offcanvasExample"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- mobile menu overlay ------------------------------------------------- -->
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+              Offcanvas
+            </h5> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav
+              class="navbar navbar-expand align-items-center justify-content-center"
+            >
+              <div class="">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul
+                    class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column align-items-center"
+                  >
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">Company</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Services
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="llm-gen-ai.html"
+                            >LLMs & Gen AI Strategy</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="cloud-service.html"
+                            >Cloud Services & Platform</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="big-data.html"
+                            >Big Data, Analytics & BI</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="enterprise.html"
+                            >Enterprise Consultation</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Industries
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="manufacturing.html"
+                            >Manufacturing
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="healthcare.html">HealthCare </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="retail.html">Retail</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="digital.html">Digital(IOT)</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="career.html">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- side button ---------------------------------------------------------------------- -->
+
+    <div class="btn-ctm">
+  <button onclick="window.location.href='contact.html'">Contact Us</button>
+</div>
+      </div>
+    </header>
+
+    <!-- manufacturing banner ------------------------------------------------------------------------------------ -->
+
+    <section class="container-fluid" id="llm-banner">
+      <div class="container-ctm row align-items-center">
+        <div class="col-md-12 align-items-center banner-text">
+          <h1 class="abt-hd1">
+            Reinventing Retail with<br />
+            <span class="spl-txt">
+              Data-Centric 
+              Approach</span
+            >
+          </h1>
+          <span class="bnr-decoration"></span>
+          <p class="bnr-p-txt">
+        As online shopping replaces more brick-and-mortar retail stores, generative AI is taking center stage. <br>
+        Bigbyte delivers enterprise-grade AI solutions that align retail offerings with evolving consumer expectations<br>
+         in the digital economy.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- manufacturing about section------------------------------------------------------------ -->
+
+    <section class="container-fluid" id="about">
+      <div class="container-ctm">
+        <div class="row justify-content-between align-items-center gap-5">
+          <div class="left col-lg-5">
+            <img src="assets/image/retail-side-image.png" alt="" srcset="" />
+          </div>
+          <div class="right col-lg-6">
+            <!-- <h3 class="hd3 mb-3">
+              Reinventing Retail with
+              <span class="spl-txt">Data-Centric Approach</span>
+            </h3> -->
+            <p class="mb-4">
+        The retail industry is undergoing a profound digital transformation driven by consumer demand for personalized, frictionless experiences. In this competitive landscape, generative AI and advanced analytics have become critical strategic assets, enabling retailers to create intelligent, adaptive business models that drive growth while enhancing customer loyalty.
+<br>
+At Bigbyte, we partner with leading retailers to implement enterprise-grade AI solutions that transform operations, enhance customer experiences, and create sustainable competitive advantages in the rapidly evolving marketplace.
+            </p>
+            <!-- <div>
+              <a class="spl-btn" href="#">Transform Your Business</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- llm portfolio section ------------------------------------------------------- -->
+    <section class="container-fluid" id="llm-portfolio">
+      <div class="container-ctm">
+        <h2 class="hd2">
+          Enterprise AI Use Cases <br /><span class="spl-txt">for Retail </span>
+        </h2>
+        <div class="row bottom">
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/delivery.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">
+              Demand Forecasting & Inventory Optimization
+            </p>
+            <p class="mb-3">
+              Our AI models analyze historical sales data, market trends,
+              seasonal factors, and external variables to predict future demand
+              with up to 35% greater accuracy than traditional methods, reducing
+              stockouts and overstock situations while optimizing working
+              capital.
+            </p>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/llm-crad-icon5.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">Personalized Customer Experiences</p>
+            <p class="mb-3">
+              Leveraging generative AI and machine learning, we create
+              recommendation engines and personalization systems that deliver
+              individualized product suggestions, content, and promotions that
+              have shown to increase conversion rates by 20-30% and average
+              order value by 15%.
+            </p>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/develop.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">
+              Dynamic Pricing & Promotion Optimization
+            </p>
+            <p class="mb-3">
+              Our AI-powered pricing systems analyze competitor data, demand
+              elasticity, inventory levels, and customer behavior to determine
+              optimal pricing strategies in real-time, typically increasing
+              profit margins by 5-8% while maintaining competitive positioning.
+            </p>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/artificial-intelligence.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">
+              Conversational AI & Virtual Shopping Assistants
+            </p>
+            <p class="mb-3">
+              We develop advanced chatbots and virtual assistants powered by
+              large language models that provide personalized shopping guidance,
+              product recommendations, and customer support, reducing service
+              costs by up to 30% while improving satisfaction scores.
+            </p>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/virtual-tour.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">Virtual Try-On & Augmented Shopping</p>
+            <p class="mb-3">
+              Our computer vision and AI solutions enable virtual try-on
+              experiences for apparel, accessories, and cosmetics, reducing
+              return rates by up to 40% and increasing purchase
+              confidence—addressing a critical pain point where returns
+              typically represent 30% of purchase prices.
+            </p>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/results.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">
+              In-Store Analytics & Operational Intelligence
+            </p>
+            <p class="mb-3">
+              We implement computer vision and IoT solutions that analyze store
+              traffic patterns, product engagement, and staff efficiency,
+              providing actionable insights that have helped retailers optimize
+              layouts and increase in-store conversion by up to 25%.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- llm success section ------------------------------------------------------------ -->
+
+    <section class="container-fluid" id="llm-success">
+      <div class="container-ctm">
+        <h2 class="hd2 text-center">Real-World</h2>
+        <h2 class="hd2 text-center mb-5">
+          <span class="spl-txt"> Retail Transformation</span>
+        </h2>
+        <div class="row justify-content-evenly g-5">
+          <div class="col-md-5 col-xl-4 d-flex flex-column success-card">
+            <div class="success-img mb-4">
+              <span class="success-icon"
+                ><img src="assets/image/data-processing.png">
+              </span>
+            </div>
+            <p class="hd4 mb-4 text-start">Automated Product Categorization</p>
+            <p class="mb-4 text-start">
+              For a major ecommerce platform, we developed a natural language
+              processing system that automatically categorizes and extracts key
+              attributes from new product listings. This approach transformed
+              product categorization into a machine-to-machine translation
+              problem, standardizing inputs and improving product discovery.
+            </p>
+            <ul>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />15x
+                faster categorization compared to manual processes
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />2x
+                increase in sales through improved product findability
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />59% of
+                shoppers use search engines before purchasing
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-5 col-xl-4 d-flex flex-column success-card">
+            <div class="success-img mb-4">
+              <span class="success-icon"
+                ><img src="assets/image/real-time.png">
+              </span>
+            </div>
+            <p class="hd4 mb-4 text-start">
+              Shelf Analysis & Share of Shelf Optimization
+            </p>
+            <p class="mb-4 text-start">
+              We helped a retail analytics company develop a computer vision
+              system to automate physical shelf auditing in supermarkets. The
+              solution identifies individual products in shelf images, counts
+              them, and determines each brand's shelf share—critical data for
+              CPG companies and retailers.
+            </p>
+            <ul>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />30x
+                faster processing compared to manual shelf audits
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />99%
+                classification accuracy for product identification
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />50,000+
+                products identified with high confidence
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- llm-impact section ---------------------------------------------------------------- -->
+
+    <section class="container-fluid" id="llm-impact">
+      <div class="container-ctm">
+        <h2 class="hd2">
+          BigByte: Your Partner in <br /><span class="spl-txt"
+            >Retail AI Transformation
+          </span>
+        </h2>
+        <div class="buttom-wrap">
+          <div class="row align-items-center justify-content-center mb-4">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon6.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center">
+                <div class="num me-4">
+                  <p>01</p>
+                </div>
+                <p class="hd4">Domain-Specific AI Models</p>
+              </div>
+              <div class="d-flex">
+                <div class="num-txt me-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="hd4">
+                  tailored for retail use cases, delivering 25-35% higher
+                  accuracy than general-purpose models
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row align-items-center justify-content-center flex-row-reverse mb-4"
+          >
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon15.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center flex-row-reverse">
+                <div class="num ms-4">
+                  <p>02</p>
+                </div>
+                <p class="hd4">End-to-End Implementation</p>
+              </div>
+              <div class="d-flex flex-row-reverse">
+                <div class="num-txt ms-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="text-end">
+                  from strategy and data engineering to model deployment and
+                  continuous optimization
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center justify-content-center mb-4">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon4.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center">
+                <div class="num me-4">
+                  <p>03</p>
+                </div>
+                <p class="hd4">Multi-Modal AI Solutions</p>
+              </div>
+              <div class="d-flex">
+                <div class="num-txt me-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="hd4">
+                  integrating text, image, and structured data analysis for
+                  comprehensive retail intelligence
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row align-items-center justify-content-center flex-row-reverse mb-4"
+          >
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon3.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center flex-row-reverse">
+                <div class="num ms-4">
+                  <p>04</p>
+                </div>
+                <p class="hd4">Pre-Built Retail AI Accelerators</p>
+              </div>
+              <div class="d-flex flex-row-reverse">
+                <div class="num-txt ms-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="text-end">
+                  that reduce time-to-value by 40-60% compared to ground-up
+                  development
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center justify-content-center mb-4">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon2.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center">
+                <div class="num me-4">
+                  <p>05</p>
+                </div>
+                <p class="hd4">Hybrid Implementation Models</p>
+              </div>
+              <div class="d-flex">
+                <div class="num-txt me-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="hd4">
+                  combining cloud-based and edge AI to optimize performance and
+                  cost-efficiency
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row align-items-center justify-content-center flex-row-reverse mb-4"
+          >
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon1.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center flex-row-reverse">
+                <div class="num ms-4">
+                  <p>06</p>
+                </div>
+                <p class="hd4">Cross-Functional Expertise</p>
+              </div>
+              <div class="d-flex flex-row-reverse">
+                <div class="num-txt ms-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="text-end">
+                  spanning data science, retail operations, and customer
+                  experience design
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center justify-content-center mb-4">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon2.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center">
+                <div class="num me-4">
+                  <p>07</p>
+                </div>
+                <p class="hd4">Outcomes-Based Engagement Models</p>
+              </div>
+              <div class="d-flex">
+                <div class="num-txt me-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="hd4">
+                  aligning our success metrics with your business objectives
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row align-items-center justify-content-center flex-row-reverse mb-4"
+          >
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon1.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center flex-row-reverse">
+                <div class="num ms-4">
+                  <p>08</p>
+                </div>
+                <p class="hd4">Enterprise-Grade Security & Governance</p>
+              </div>
+              <div class="d-flex flex-row-reverse">
+                <div class="num-txt ms-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="text-end">
+                  ensuring compliance with data privacy regulations and industry
+                  standards
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- llm success section ------------------------------------------------------------ -->
+
+    <!-- <section class="container-fluid" id="llm-success">
+      <div class="container-ctm">
+        <h2 class="hd2 text-center">Our Enterprise</h2>
+        <h2 class="hd2 text-center mb-5">
+          <span class="spl-txt"> Technology Ecosystem</span>
+        </h2>
+        <div class="row justify-content-evenly g-5">
+          <div
+            class="col-md-5 col-xl-2 d-flex flex-column align-items-center success-card"
+          >
+            <div class="success-img mb-4">
+              <span class="success-icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="109"
+                  height="109"
+                  viewBox="0 0 109 109"
+                  fill="none"
+                >
+                  <path
+                    d="M45.4167 13.625L36.3333 22.7083V31.7917H22.7084C17.4854 31.7917 14.17 36.3333 13.625 40.875L9.08335 86.2917C8.53835 90.8333 11.5359 95.375 18.1667 95.375H90.8334C97.4642 95.375 100.462 90.8333 99.9167 86.2917L95.375 40.875C94.83 36.3333 91.1059 31.7917 86.2917 31.7917H72.6667V22.7083L63.5833 13.625H45.4167ZM45.4167 22.7083H63.5833V31.7917H45.4167V22.7083ZM49.9583 45.4167H59.0417V59.0417H72.6667V68.125H59.0417V81.75H49.9583V68.125H36.3333V59.0417H49.9583V45.4167Z"
+                    fill="#28166F"
+                  />
+                </svg>
+              </span>
+            </div>
+            <p class="hd4 mb-4">AWS</p>
+          </div>
+          <div
+            class="col-md-5 col-xl-2 d-flex flex-column align-items-center success-card"
+          >
+            <div class="success-img mb-4">
+              <span class="success-icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="105"
+                  height="105"
+                  viewBox="0 0 105 105"
+                  fill="none"
+                >
+                  <path
+                    d="M74.375 43.75V26.25L52.5 43.75V26.25L30.625 43.75V17.5H8.75V87.5H96.25V26.25L74.375 43.75ZM39.375 74.375H30.625V61.25H39.375V74.375ZM61.25 74.375H52.5V61.25H61.25V74.375ZM83.125 74.375H74.375V61.25H83.125V74.375Z"
+                    fill="#28166F"
+                  />
+                </svg>
+              </span>
+            </div>
+            <p class="hd4 mb-4">Azure</p>
+          </div>
+          <div
+            class="col-md-5 col-xl-2 d-flex flex-column align-items-center success-card"
+          >
+            <div class="success-img mb-4">
+              <span class="success-icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="109"
+                  height="109"
+                  viewBox="0 0 109 109"
+                  fill="none"
+                >
+                  <path
+                    d="M45.4167 13.625L36.3333 22.7083V31.7917H22.7084C17.4854 31.7917 14.17 36.3333 13.625 40.875L9.08335 86.2917C8.53835 90.8333 11.5359 95.375 18.1667 95.375H90.8334C97.4642 95.375 100.462 90.8333 99.9167 86.2917L95.375 40.875C94.83 36.3333 91.1059 31.7917 86.2917 31.7917H72.6667V22.7083L63.5833 13.625H45.4167ZM45.4167 22.7083H63.5833V31.7917H45.4167V22.7083ZM49.9583 45.4167H59.0417V59.0417H72.6667V68.125H59.0417V81.75H49.9583V68.125H36.3333V59.0417H49.9583V45.4167Z"
+                    fill="#28166F"
+                  />
+                </svg>
+              </span>
+            </div>
+            <p class="hd4 mb-4">Snowflake</p>
+          </div>
+          <div
+            class="col-md-5 col-xl-2 d-flex flex-column align-items-center success-card"
+          >
+            <div class="success-img mb-4">
+              <span class="success-icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="105"
+                  height="105"
+                  viewBox="0 0 105 105"
+                  fill="none"
+                >
+                  <path
+                    d="M74.375 43.75V26.25L52.5 43.75V26.25L30.625 43.75V17.5H8.75V87.5H96.25V26.25L74.375 43.75ZM39.375 74.375H30.625V61.25H39.375V74.375ZM61.25 74.375H52.5V61.25H61.25V74.375ZM83.125 74.375H74.375V61.25H83.125V74.375Z"
+                    fill="#28166F"
+                  />
+                </svg>
+              </span>
+            </div>
+            <p class="hd4 mb-4">NVIDIA</p>
+          </div>
+          <div
+            class="col-md-5 col-xl-2 d-flex flex-column align-items-center success-card"
+          >
+            <div class="success-img mb-4">
+              <span class="success-icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="105"
+                  height="105"
+                  viewBox="0 0 105 105"
+                  fill="none"
+                >
+                  <path
+                    d="M74.375 43.75V26.25L52.5 43.75V26.25L30.625 43.75V17.5H8.75V87.5H96.25V26.25L74.375 43.75ZM39.375 74.375H30.625V61.25H39.375V74.375ZM61.25 74.375H52.5V61.25H61.25V74.375ZM83.125 74.375H74.375V61.25H83.125V74.375Z"
+                    fill="#28166F"
+                  />
+                </svg>
+              </span>
+            </div>
+            <p class="hd4 mb-4">Databricks</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- llm success section ------------------------------------------------------------ -->
+
+    <section class="container-fluid" id="llm-success">
+      <div class="container-ctm">
+        <h2 class="hd2 text-center">Our Healthcare</h2>
+        <h2 class="hd2 text-center mb-5">
+          <span class="spl-txt"> Technology Ecosystem</span>
+        </h2>
+        <p class="sub-txt">
+          BigByte partners with the world's leading technology providers to deliver enterprise-grade AI solutions for manufacturing. Our technology partnerships ensure that you benefit from best-in-class infrastructure, frameworks, and platforms combined with our specialized manufacturing domain expertise.
+        </p>
+        <div class="row justify-content-evenly g-5">
+          <div
+            class="col-md-5 col-xl-2 d-flex flex-column align-items-center success-card"
+          >
+            <div class="success-img">
+              <span class="success-icon"
+                ><img src="assets/image/aws-logo.jpg">
+              </span>
+            </div>
+            <p class="hd4 mb-4">AWS</p>
+          </div>
+          <div
+            class="col-md-5 col-xl-2 d-flex flex-column align-items-center success-card"
+          >
+            <div class="success-img">
+              <span class="success-icon"
+                ><img src="assets/image/ms-logo.png">
+              </span>
+            </div>
+            <p class="hd4 mb-4">Azure</p>
+          </div>
+          <div
+            class="col-md-5 col-xl-2 d-flex flex-column align-items-center success-card"
+          >
+            <div class="success-img">
+              <span class="success-icon"
+                ><img src="assets/image/snowflake.png">
+              </span>
+            </div>
+            <p class="hd4 mb-4">Snowflake</p>
+          </div>
+          <div
+            class="col-md-5 col-xl-2 d-flex flex-column align-items-center success-card"
+          >
+            <div class="success-img">
+              <span class="success-icon"
+                ><img src="assets/image/nvidia.png">
+                </svg>
+              </span>
+            </div>
+            <p class="hd4 mb-4">NVIDIA</p>
+          </div>
+          <div
+            class="col-md-5 col-xl-2 d-flex flex-column align-items-center success-card"
+          >
+            <div class="success-img">
+              <span class="success-icon"
+                ><img src="assets/image/data-bricks.jpg">
+                </svg>
+              </span>
+            </div>
+            <p class="hd4 mb-4">Databricks</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- testimonial -------------------------------------------------------------------------------- -->
+
+    <section class="container-fluid" id="testimonial">
+      <div class="container-ctm">
+        <div class="top mb-5 d-flex flex-column align-items-center">
+          <h2 class="hd2">
+            <span class="spl-txt">Our Strategic </span>
+          </h2>
+          <h2 class="hd2 mb-4 text-center">Technology Advantages</h2>
+          <p class="text-center">
+            Reduce manual work by 50% and improve accuracy by 90%
+          </p>
+        </div>
+        <div class="bottom row g-4">
+          <div class="col-md-6 col-xl-3 d-flex flex-column">
+            <div
+              class="company-logo d-flex justify-content-center align-items-center"
+            >
+              <img src="assets/image/brain1.svg" alt="" srcset="" />
+            </div>
+            <div class="card-ctm">
+              <p class="num">1.</p>
+              <h4 class="hd4">Cloud-Native AI Architecture</h4>
+              <p class="card-txt">
+                We leverage AWS's specialized retail AI services, Azure's
+                cognitive services, and Google Cloud's Vertex AI to develop and
+                deploy scalable retail AI solutions that can handle seasonal
+                demand fluctuations.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-xl-3 d-flex flex-column flex-xl-column-reverse"
+          >
+            <div
+              class="company-logo d-flex justify-content-center align-items-center"
+            >
+              <img src="assets/image/network1.svg" alt="" srcset="" />
+            </div>
+            <div class="card-ctm">
+              <p class="num">2.</p>
+              <h4 class="hd4">Data Orchestration Excellence</h4>
+              <p class="card-txt">
+                Our expertise with Snowflake's Data Cloud and Databricks'
+                Lakehouse Platform enables us to integrate disparate retail data
+                sources into unified analytics platforms that power real-time
+                decision intelligence.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3 d-flex flex-column">
+            <div
+              class="company-logo d-flex justify-content-center align-items-center"
+            >
+              <img src="assets/image/analytics1.svg" alt="" srcset="" />
+            </div>
+            <div class="card-ctm">
+              <p class="num">3.</p>
+              <h4 class="hd4">GPU-Accelerated Computing</h4>
+              <p class="card-txt">
+                Through our partnership with NVIDIA, we implement
+                high-performance computing infrastructure for training and
+                deploying sophisticated computer vision models for virtual
+                try-on, visual search, and in-store analytics.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-xl-3 d-flex flex-column flex-xl-column-reverse"
+          >
+            <div
+              class="company-logo d-flex justify-content-center align-items-center"
+            >
+              <img src="assets/image/cloud1.svg" alt="" srcset="" />
+            </div>
+            <div class="card-ctm">
+              <p class="num">4.</p>
+              <h4 class="hd4">Implementation Flexibility</h4>
+              <p class="card-txt">
+                Whether you operate on a single cloud or in a multi-cloud
+                environment, our platform-agnostic approach ensures seamless
+                integration with your existing technology investments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- counter section ------------------------------------------------------------ -->
+
+    <section class="container-fluid" id="manuf-counter">
+      <section class="container-ctm">
+        <div class="counter-wrap row">
+          <div class="col-lg-4 col-md-6">
+            <p class="count-num">
+              <span class="counter">35</span><span>%</span>
+            </p>
+            <p>Reduction in unplanned downtime with our AI-powered predictive maintenance</p>
+            <!-- <p>Average accross all implementations</p> -->
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <p class="count-num">
+              <span class="counter">35</span><span>%</span>
+            </p>
+            <p>Improvement in operational efficiency through AI-driven process optimization</p>
+            <!-- <p>Average accross all implementations</p> -->
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <p class="count-num">
+              <span class="counter">4</span><span>X</span>
+            </p>
+            <p>ROI on manufacturing AI investments through our implementation methodology</p>
+            <!-- <p>Average accross all implementations</p> -->
+          </div>
+          <!-- <div class="col-lg-3 col-md-6">
+            <p class="count-num">
+              <span class="counter">35</span><span>%</span>
+            </p>
+            <p>infrastructure Cost reduction</p>
+            <p>Average accross all implementations</p>
+          </div> -->
+        </div>
+      </section>
+    </section>
+
+    <!-- contact ----------------------------------------------------------------------------------- -->
+
+    <section class="container-fluid" id="contact">
+      <div class="container-ctm">
+        <div
+          class="contact-cta d-flex justify-content-between align-items-center"
+        >
+          <div class="left">
+            <p class="hd2">Ready to Get Measurable AI Results in 90 Days?</p>
+          </div>
+          <div class="right">
+            <a href="#" class="d-flex align-items-center"
+              ><p>Get in touch</p>
+              <span class="spl-txt"
+                ><i class="fa-solid fa-arrow-right"></i></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -------------------------------------------------------------------------------------- -->
+    <footer class="container-fluid" id="footer">
+      <div class="container-ctm row g-4">
+        <div class="footer-col-1 col-xl-3 col-md-6 col-12">
+          <a href="index.html">
+            <img src="assets/image/logo.webp" alt="" srcset=""
+          /></a>
+          <p>
+            We transform business vision into market-leading digital solutions.
+            Our enterprise-grade implementations drive innovation, operational
+            excellence, and sustainable competitive advantage.
+          </p>
+        </div>
+        <div class="footer-col-2 col-xl-2 col-md-4 col-6">
+          <h5 class="hd5">Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="">Career</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-3 col-xl-3 col-md-5 col-12">
+          <h5 class="hd5">Services</h5>
+          <ul>
+            <li><a href="">LLMs & Gen AI Strategy</a></li>
+            <li><a href="">Cloud Services & Platform</a></li>
+            <li><a href="">Big Data, Analytics & BI</a></li>
+            <li><a href="">Network & Optical Engineering</a></li>
+            <li><a href="">Cybersecurity</a></li>
+            <li><a href="">Enterprise Consultation</a></li>
+            <li><a href="">Product Engineering</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-4 col-xl-2 col-md-3 col-6">
+          <h5 class="hd5">Industries</h5>
+          <ul>
+            <li><a href="manufacturing.html">Manufacturing </a></li>
+            <li><a href="">HealthCare</a></li>
+            <li><a href="">Retail</a></li>
+            <li><a href="">Banking & Finance </a></li>
+            <li><a href="">Insurance</a></li>
+            <li><a href="">Digital(IOT)</a></li>
+            <li><a href="">Education</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-5 col-xl-2 col-md-6">
+          <h5 class="hd5">Follow Us</h5>
+          <ul class="d-flex align-items-center">
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-gitlab"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-telegram"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-figma"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <svg
+          class="editorial"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 12"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    58 18 88 18
+    v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2" />
+            <use xlink:href="#gentle-wave" x="50" y="3" fill="#3461c1" />
+            <use xlink:href="#gentle-wave" x="50" y="6" fill="#2d55aa" />
+          </g>
+        </svg>
+      </div>
+    </footer>
+
+    <!-- javascript --------------------------------------------------------------------------------- -->
+
+    <!-- jquery ------------------------------------------------------------------------------------- -->
+    <script src="assets/js/jquery-js/jquery-3.7.1.min.js"></script>
+
+    <!-- counter js ---------------------------------------------------- -->
+    <script src="assets/js/counter-js/jquery.countup.min.js"></script>
+    <script src="assets/js/counter-js/jquery.waypoints.min.js"></script>
+
+    <!-- bootstrap ----------------------------------------------------------------------------------- -->
+    <script src="assets/js/bootstrap-js/bootstrap.bundle.min.js"></script>
+
+    <!-- owl-carousel --------------------------------------------------------------------------------- -->
+    <script src="assets/js/owlcarousel-js/owl.carousel.min.js"></script>
+
+    <!-- custom js------------------------------------------------------------------------------------ -->
+    <script src="assets/js/custom-js/script.js"></script>
+  </body>
+</html>

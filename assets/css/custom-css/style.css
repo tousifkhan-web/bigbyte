@@ -239,6 +239,42 @@ a {
   background-position: right center;
 }
 
+/* Custom dropdown menu style */
+.dropdown-menu {
+  background: #ffffff;
+  border: none;
+  box-shadow: 0px 8px 24px rgba(40, 22, 111, 0.1);
+  border-radius: 10px;
+  padding: 10px 0;
+  min-width: 250px;
+  transition: 0.3s ease-in-out;
+}
+
+/* Dropdown items */
+.dropdown-menu .dropdown-item {
+  font-family: var(--fontfamily1);
+  font-size: 16px;
+  color: var(--grey-dark);
+  padding: 10px 20px;
+  transition: 0.3s ease;
+  border-radius: 8px;
+}
+
+/* On hover */
+.dropdown-menu .dropdown-item:hover {
+  background-image: linear-gradient(to right, var(--blue), var(--blue-light));
+  color: white;
+  font-weight: 600;
+}
+
+.nav-item.dropdown .nav-link::after {
+  /* content: "\f078";  */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-left: 6px;
+  font-size: 20px;
+}
+
 /* menu ********************************************* */
 
 #header .navbar .nav-item .nav-link {
@@ -255,6 +291,12 @@ a {
 #header .navbar .nav-item:active {
   color: var(--blue);
   font-weight: 800;
+}
+
+#header .navbar .nav-item .nav-link.active {
+  color: var(--blue);
+  font-weight: 800;
+  border-bottom: 2px solid var(--blue);
 }
 
 #header .navbar .nav-item .active {
@@ -289,7 +331,7 @@ a {
   font-weight: 800;
 }
 ul.navbar-nav {
-    gap: 25px;
+  gap: 25px;
 }
 
 /* banner **************************************************** */
@@ -329,6 +371,7 @@ ul.navbar-nav {
   font-weight: 500;
   line-height: normal;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 #banner .left ul {
@@ -372,12 +415,15 @@ ul.navbar-nav {
 
 #about .container-ctm .right p {
   font-family: var(--fontfamily1);
-  font-size: clamp(1rem, 0.077rem + 1.442vw, 1.375rem);
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   color: var(--body-txt-color);
 }
-
+.about-icon {
+    width: 50px;
+    height: 50px;
+}
 /* solution ******************************************
  */
 
@@ -513,8 +559,7 @@ ul.navbar-nav {
 #solution .bottom .center-box-6 .inner {
   width: 700px;
   height: 700px;
-  border: 1px solid var(--blue);
-  animation: rotate6 15s forwards linear infinite;
+  /* animation: rotate6 15s forwards linear infinite; */
   border-radius: 50%;
   position: relative;
 }
@@ -532,7 +577,7 @@ ul.navbar-nav {
 #solution .bottom .center-box-6 .inner .inner-box .inner-box-item {
   width: 200px;
   /* border: 1px solid purple; */
-  animation: rotate6 15s reverse linear infinite;
+  /* animation: rotate6 15s reverse linear infinite; */
 }
 
 #solution .bottom .center-box-6 .inner .inner-box {
@@ -543,17 +588,17 @@ ul.navbar-nav {
 }
 
 #solution .bottom .center-box-6 .inner .inner-box1 {
-  top: 0px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: 0px;
+  top: 25%;
+  transform: translate(30%, -50%);
   /* border: 1px solid red; */
 }
 
 #solution .bottom .center-box-6 .inner .inner-box2 {
-  right: 0px;
-  top: 25%;
-  transform: translate(30%, -50%);
   /* border: 1px solid black; */
+  top: 50%;
+  right: 0px;
+  transform: translate(50%, -50%);
 }
 #solution .bottom .center-box-6 .inner .inner-box3 {
   right: 0px;
@@ -562,15 +607,15 @@ ul.navbar-nav {
   /* border: 1px solid purple; */
 }
 #solution .bottom .center-box-6 .inner .inner-box4 {
-  bottom: 0px;
-  left: 50%;
-  transform: translate(-50%, 50%);
   /* border: 1px solid blue; */
-}
-#solution .bottom .center-box-6 .inner .inner-box5 {
   top: 75%;
   left: 0px;
   transform: translate(-30%, -50%);
+}
+#solution .bottom .center-box-6 .inner .inner-box5 {
+  bottom: 50%;
+  left: 0px;
+  transform: translate(-50%, 50%);
   /* border: 1px solid green; */
 }
 #solution .bottom .center-box-6 .inner .inner-box6 {
@@ -813,7 +858,7 @@ ul.navbar-nav {
   background: #fff;
   box-shadow: 0px 4px 15px 0px rgba(108, 178, 225, 0.28),
     0px 1px 3px 1px rgba(108, 178, 225, 0.15);
-  height: 400px;
+  height: 420px;
 }
 #package .bottom .card-ctm img {
   width: fit-content;
@@ -823,9 +868,12 @@ ul.navbar-nav {
   color: #7a7d9c;
   text-align: center;
   font-family: var(--fontfamily1);
-  font-size: clamp(1rem, 0.875rem + 0.347vw, 1.188rem);
-  /* scale between 16px at 576px and 19px at 1440px */
+  /* font-size: clamp(1rem, 0.875rem + 0.347vw, 1.188rem); */
+  font-size: 20px;
+  font-style: normal;
   font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.25px;
 }
 
 /* contact ************************************************** */

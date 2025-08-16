@@ -1,0 +1,13 @@
+#llm-portfolio .bottom > div {
+    padding: 50px;
+   align-items: start;
+}
+
+#llm-banner {
+  background: url(../../image/cloud-banner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}

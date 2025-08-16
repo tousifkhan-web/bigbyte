@@ -46,6 +46,7 @@
 
     <!-- custom css --------------------------------------------------------------------------------- -->
     <link rel="stylesheet" href="assets/css/custom-css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom-css/llm-gen-ai.css" />
 
     <!-- mediaquery --------------------------------------------------------------------------------- -->
     <link rel="stylesheet" href="assets/css/custom-css/mediaquery.css" />
@@ -70,15 +71,15 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html"
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Market</a>
+                  <a class="nav-link" href="about.html">Company</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -91,18 +92,66 @@
                     Services
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="llm-gen-ai.html"
+                        >LLMs & Gen AI Strategy</a
+                      >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="cloud-service.html"
+                        >Cloud Services & Platform</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="big-data.html"
+                        >Big Data, Analytics & BI</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="enterprise.html"
+                        >Enterprise Consultation</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Industries
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="manufacturing.html"
+                        >Manufacturing
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="healthcare.html"
+                        >HealthCare
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="retail.html">Retail</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="digital.html"
+                        >Digital(IOT)</a
+                      >
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
+                  <a class="nav-link" href="career.html">Careers</a>
                 </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li> -->
               </ul>
             </div>
           </div>
@@ -152,14 +201,11 @@
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
+                      <a class="nav-link" href="about.html">Company</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Market</a>
-                    </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
                       <a
-                        class="nav-link"
+                        class="nav-link dropdown-toggle"
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -167,9 +213,65 @@
                       >
                         Services
                       </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="llm-gen-ai.html"
+                            >LLMs & Gen AI Strategy</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="cloud-service.html"
+                            >Cloud Services & Platform</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="big-data.html"
+                            >Big Data, Analytics & BI</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="enterprise.html"
+                            >Enterprise Consultation</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Industries
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="manufacturing.html"
+                            >Manufacturing
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="healthcare.html"
+                            >HealthCare
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="retail.html">Retail</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="digital.html"
+                            >Digital(IOT)</a
+                          >
+                        </li>
+                      </ul>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Blog</a>
+                      <a class="nav-link" href="career.html">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                   </ul>
                 </div>
@@ -181,7 +283,9 @@
         <!-- side button ---------------------------------------------------------------------- -->
 
         <div class="btn-ctm">
-          <button id="#">Login</button>
+          <button onclick="window.location.href='contact.html'">
+            Contact Us
+          </button>
         </div>
       </div>
     </header>
@@ -240,7 +344,7 @@
       <div class="container-ctm">
         <div class="row justify-content-between align-items-center gap-5">
           <div class="left col-lg-5">
-            <img src="assets/image/about-img.webp" alt="" srcset="" />
+            <img src="assets/image/home-img.png" alt="" srcset="" />
           </div>
           <div class="right col-lg-6">
             <h3 class="hd3 mb-3">
@@ -259,7 +363,7 @@
               while maintaining security and compliance your stakeholders trust.
             </p>
             <div>
-              <a class="spl-btn" href="#">Transform Your Business</a>
+              <a class="spl-btn" href="#">Get Your AI Strategy Consultation</a>
             </div>
           </div>
         </div>
@@ -281,11 +385,11 @@
           <div
             class="d-flex flex-column align-items-center justify-content-center"
           >
-            <p class="center-head">LLMs & Gen AI Strategy</p>
-            <p class="center-txt">
-              Build innovative AI-powered products that create new revenue
-              streams and enhance customer experiences. Bring products to market
-              60% faster with our proven development methodologies.
+            <p id="circle_head" class="center-head">LLMs & Gen AI Strategy</p>
+            <p class="center-txt" id="circle_text">
+              Automate complex processes and enhance decision-making with custom
+              AI that reduces manual work by 50% and improves accuracy by 90%.
+              Get intelligent automation that works reliably from day one.
             </p>
           </div>
         </div>
@@ -295,7 +399,7 @@
           </div>
         </div>
 
-        <div class="center-box-3">
+        <!-- <div class="center-box-3">
           <div class="inner">
             <img src="assets/image/sol-ring3.webp" alt="" srcset="" />
           </div>
@@ -311,37 +415,61 @@
           <div class="inner">
             <img src="assets/image/sol-ring5.webp" alt="" srcset="" />
           </div>
-        </div>
+        </div> -->
 
         <div class="center-box-6">
           <div class="inner">
-            <div class="inner-box inner-box1">
-              <div class="inner-box-item">
+            <div class="inner-box inner-box1" id="card1">
+              <div
+                class="inner-box-item"
+                data-title="Network & Infrastructure"
+                data-text="Reliable network architecture and scalable infrastructure solutions designed for enterprise-grade systems."
+              >
                 <img src="assets/image/sol-card1.webp" alt="" srcset="" />
               </div>
             </div>
-            <div class="inner-box inner-box2">
-              <div class="inner-box-item">
+            <div class="inner-box inner-box2" id="card2">
+              <div
+                class="inner-box-item"
+                data-title="Negtrthgthryhrtructure"
+                data-text="Reliable network architecture and scalable infrastructure solutions designed for enterprise-grade systems."
+              >
                 <img src="assets/image/sol-card2.webp" alt="" srcset="" />
               </div>
             </div>
-            <div class="inner-box inner-box3">
-              <div class="inner-box-item">
+            <div class="inner-box inner-box3" id="card3">
+              <div
+                class="inner-box-item"
+                data-title="Netwbgbgrbtbrructure"
+                data-text="Reliable network architecture and scalable infrastructure solutions designed for enterprise-grade systems."
+              >
                 <img src="assets/image/sol-card3.webp" alt="" srcset="" />
               </div>
             </div>
-            <div class="inner-box inner-box4">
-              <div class="inner-box-item">
+            <div class="inner-box inner-box4" id="card4">
+              <div
+                class="inner-box-item"
+                data-title="Netnhgnhgnstructure"
+                data-text="Reliable network architecture and scalable infrastructure solutions designed for enterprise-grade systems."
+              >
                 <img src="assets/image/sol-card4.webp" alt="" srcset="" />
               </div>
             </div>
-            <div class="inner-box inner-box5">
-              <div class="inner-box-item">
+            <div class="inner-box inner-box5" id="card5">
+              <div
+                class="inner-box-item"
+                data-title="Nbgfbgbture"
+                data-text="Reliable network architecture and scalable infrastructure solutions designed for enterprise-grade systems."
+              >
                 <img src="assets/image/sol-card5.webp" alt="" srcset="" />
               </div>
             </div>
-            <div class="inner-box inner-box6">
-              <div class="inner-box-item">
+            <div class="inner-box inner-box6" id="card6">
+              <div
+                class="inner-box-item"
+                data-title="bgtbybyture"
+                data-text="Reliable network architecture and scalable infrastructure solutions designed for enterprise-grade systems."
+              >
                 <img src="assets/image/sol-card6.webp" alt="" srcset="" />
               </div>
             </div>
@@ -350,40 +478,64 @@
       </div>
       <div class="container-ctm bottom-extra">
         <div class="row g-3">
-          <div class="col-md-6 col-lg-4">
-            <div class="inner-item inner-item1 d-flex align-items-center">
-              <img src="assets/image/sol-icon1.webp" alt="" srcset="" />
-              <p>Network & Infrastructure</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="inner-item inner-item2 d-flex align-items-center">
-              <img src="assets/image/sol-icon1.webp" alt="" srcset="" />
-              <p>Big Data, Analytics, & BI</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="inner-item inner-item3 d-flex align-items-center">
-              <img src="assets/image/sol-icon1.webp" alt="" srcset="" />
+          <div class="col-md-6 col-lg-4" id="cardr1">
+            <div
+              class="inner-item inner-item1 d-flex align-items-center tab-btn active"
+              data-title="Network & Infrastructure"
+              data-text="Reliable network architecture and scalable infrastructure solutions designed for enterprise-grade systems."
+            >
+              <img src="assets/image/sol-icon1.webp" alt="" />
               <p>LLMs & Gen AI Strategy</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="inner-item inner-item4 d-flex align-items-center">
-              <img src="assets/image/sol-icon1.webp" alt="" srcset="" />
-              <p>Cloud Services & Platform</p>
+          <div class="col-md-6 col-lg-4" id="cardr2">
+            <div
+              class="inner-item inner-item1 d-flex align-items-center tab-btn active"
+              data-title="rbrbbgb"
+              data-text="Reliable network architecture and scalable infrastructure solutions designed for enterprise-grade systems."
+            >
+              <img src="assets/image/sol-icon1.webp" alt="" />
+              <p>Big Data, Analytics & BI</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="inner-item inner-item5 d-flex align-items-center">
-              <img src="assets/image/sol-icon1.webp" alt="" srcset="" />
+          <div class="col-md-6 col-lg-4" id="cardr3">
+            <div
+              class="inner-item inner-item1 d-flex align-items-center tab-btn active"
+              data-title="gbrbgbth"
+              data-text="Reliable network architecture and scalable infrastructure solutions designed for enterprise-grade systems."
+            >
+              <img src="assets/image/sol-icon1.webp" alt="" />
+              <p>Network & Infrastructure</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" id="cardr4">
+            <div
+              class="inner-item inner-item1 d-flex align-items-center tab-btn active"
+              data-title="Network & Infrastructure"
+              data-text="Reliable network architecture and scalable infrastructure solutions designed for enterprise-grade systems."
+            >
+              <img src="assets/image/sol-icon1.webp" alt="" />
+              <p>Product Engineering</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" id="cardr5">
+            <div
+              class="inner-item inner-item1 d-flex align-items-center tab-btn active"
+              data-title="Network & Infrastructure"
+              data-text="Reliable network architecture and scalable infrastructure solutions designed for enterprise-grade systems."
+            >
+              <img src="assets/image/sol-icon1.webp" alt="" />
               <p>Enterprise Consulting</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="inner-item inner-item6 d-flex align-items-center">
-              <img src="assets/image/sol-icon1.webp" alt="" srcset="" />
-              <p>Product Engineering</p>
+          <div class="col-md-6 col-lg-4" id="cardr6">
+            <div
+              class="inner-item inner-item1 d-flex align-items-center tab-btn active"
+              data-title="Network & Infrastructure"
+              data-text="Reliable network architecture and scalable infrastructure solutions designed for enterprise-grade systems."
+            >
+              <img src="assets/image/sol-icon1.webp" alt="" />
+              <p>Cloud Services & Platform</p>
             </div>
           </div>
         </div>
@@ -405,7 +557,7 @@
             <div class="col-md-6 col-xl-3 g-3">
               <div class="card-ctm card1 p-4 text-center">
                 <img src="assets/image/values-icon-1.webp" alt="" srcset="" />
-                <h4 class="hd4 mt-3 mb-3">Practical Innovation</h4>
+                <h4 class="hd4 mt-3 mb-3">Proven Results</h4>
                 <p>
                   We deliver measurable business outcomes, not just technology.
                   Every solution comes with clear success metrics, timeline
@@ -423,7 +575,7 @@
             <div class="col-md-6 col-xl-3 g-3">
               <div class="card-ctm card2 p-4 text-center">
                 <img src="assets/image/values-icon-2.webp" alt="" srcset="" />
-                <h4 class="hd4 mt-3 mb-3">Smart follow-up questions</h4>
+                <h4 class="hd4 mt-3 mb-3">Practical Innovation</h4>
                 <p>
                   We focus on AI solutions that work in the real world. Our
                   approach combines cutting-edge technology with practical
@@ -581,140 +733,164 @@
       </div>
     </section>
 
-    <!-- package ----------------------------------------------------------------------------------- -->
+    <!-- llm-impact section ---------------------------------------------------------------- -->
 
-    <section class="container-fluid" id="package">
+    <section class="container-fluid" id="llm-impact">
       <div class="container-ctm">
-        <div class="top d-flex justify-content-between align-items-center">
-          <div class="left">
-            <h2 class="hd2">
-              Your <span class="spl-txt">AI transformation</span>
-            </h2>
-            <h2 class="hd2">Package Includes</h2>
-          </div>
-          <div class="right d-flex gap-2" id="package-carousel-nav">
-            <div
-              class="d-flex justify-content-center align-items-center"
-              id="package-nav-left"
-            >
-              <i class="fa-solid fa-arrow-left"></i>
+        <h2 class="hd2">
+          BigByte: Your Partner in <br /><span class="spl-txt"
+            >Manufacturing AI Transformation
+          </span>
+        </h2>
+        <div class="buttom-wrap">
+          <div class="row align-items-center justify-content-center mb-4">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon6.png" alt="" srcset="" />
             </div>
-            <div
-              class="d-flex justify-content-center align-items-center"
-              id="package-nav-right"
-            >
-              <i class="fa-solid fa-arrow-right"></i>
-            </div>
-          </div>
-        </div>
-        <div class="owl-carousel owl-theme package-slider bottom">
-          <div class="item">
-            <div
-              class="card-ctm d-flex flex-column justify-content-center align-items-center"
-            >
-              <img
-                src="assets/image/package-icon-1.webp"
-                class="mb-4"
-                srcset=""
-              />
-              <h4 class="hd4 text-center mb-4">
-                90-Day Implementation Roadmap
-              </h4>
-              <p class="card-txt text-center">
-                Get a clear strategy that aligns AI investments with revenue
-                growth, complete with timelines, milestones, and success
-                metrics.
-              </p>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center">
+                <div class="num me-4">
+                  <p>01</p>
+                </div>
+                <p class="hd4">90-Day Implementation Roadmap</p>
+              </div>
+              <div class="d-flex">
+                <div class="num-txt me-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="hd4">
+                  Get a clear strategy that aligns AI investments with revenue
+                  growth, complete with timelines, milestones, and success
+                  metrics.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="item">
-            <div
-              class="card-ctm d-flex flex-column justify-content-center align-items-center"
-            >
-              <img
-                src="assets/image/package-icon-2.webp"
-                class="mb-4"
-                srcset=""
-              />
-              <h4 class="hd4 text-center mb-4">
-                Enterprise-Ready Implementation
-              </h4>
-              <p class="card-txt text-center">
-                Reliable AI solutions that scale with robust security and
-                compliance safeguards, ensuring 99.9% uptime and regulatory
-                adherence
-              </p>
+          <div
+            class="row align-items-center justify-content-center flex-row-reverse mb-4"
+          >
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon15.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center flex-row-reverse">
+                <div class="num ms-4">
+                  <p>02</p>
+                </div>
+                <p class="hd4">Enterprise-Ready Implementation</p>
+              </div>
+              <div class="d-flex flex-row-reverse">
+                <div class="num-txt ms-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="text-end">
+                  Reliable AI solutions that scale with robust security and
+                  compliance safeguards, ensuring 99.9% uptime and regulatory
+                  adherence.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="item">
-            <div
-              class="card-ctm d-flex flex-column justify-content-center align-items-center"
-            >
-              <img
-                src="assets/image/package-icon-3.webp"
-                class="mb-4"
-                srcset=""
-              />
-              <h4 class="hd4 text-center mb-4">Expert knowledge Transfer</h4>
-              <p class="card-txt text-center">
-                Access specialized expertise and proven methodologies that
-                accelerate time-to-market by 60% and build internal AI
-                capabilities
-              </p>
+          <div class="row align-items-center justify-content-center mb-4">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon4.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center">
+                <div class="num me-4">
+                  <p>03</p>
+                </div>
+                <p class="hd4">Expert Knowledge Transfer</p>
+              </div>
+              <div class="d-flex">
+                <div class="num-txt me-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="hd4">
+                  Access specialized expertise and proven methodologies that
+                  accelerate time-to-market by 60% and build internal AI
+                  capabilities.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="item">
-            <div
-              class="card-ctm d-flex flex-column justify-content-center align-items-center"
-            >
-              <img
-                src="assets/image/package-icon-4.webp"
-                class="mb-4"
-                srcset=""
-              />
-              <h4 class="hd4 text-center mb-4">
-                Intelligent Process Automation
-              </h4>
-              <p class="card-txt text-center">
-                Eliminate bottlenecks and reduce manual work by 50% through
-                AI-driven workflow optimization that works reliably from day one
-              </p>
+          <div
+            class="row align-items-center justify-content-center flex-row-reverse mb-4"
+          >
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon3.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center flex-row-reverse">
+                <div class="num ms-4">
+                  <p>04</p>
+                </div>
+                <p class="hd4">Intelligent Process Automation</p>
+              </div>
+              <div class="d-flex flex-row-reverse">
+                <div class="num-txt ms-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="text-end">
+                  Eliminate bottlenecks and reduce manual work by 50% through
+                  AI-driven workflow optimization that works reliably from day
+                  one.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="item">
-            <div
-              class="card-ctm d-flex flex-column justify-content-center align-items-center"
-            >
-              <img
-                src="assets/image/package-icon-5.webp"
-                class="mb-4"
-                srcset=""
-              />
-              <h4 class="hd4 text-center mb-4">Data-Driven Decision Support</h4>
-              <p class="card-txt text-center">
-                Transform enterprise data into profitable insights through
-                advanced analytics that reveal opportunities and predict market
-                trends
-              </p>
+          <div class="row align-items-center justify-content-center mb-4">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon2.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center">
+                <div class="num me-4">
+                  <p>05</p>
+                </div>
+                <p class="hd4">Data-Driven Decision Support</p>
+              </div>
+              <div class="d-flex">
+                <div class="num-txt me-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="hd4">
+                  Transform enterprise data into profitable insights through
+                  advanced analytics that reveal opportunities and predict
+                  market trends.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="item">
-            <div
-              class="card-ctm d-flex flex-column justify-content-center align-items-center"
-            >
-              <img
-                src="assets/image/package-icon-6.webp"
-                class="mb-4"
-                srcset=""
-              />
-              <h4 class="hd4 text-center mb-4">
-                Security & Compliance Framework
-              </h4>
-              <p class="card-txt text-center">
-                Comprehensive safeguards for AI ethics, data security, and
-                regulatory compliance that maintain stakeholder trust while
-                enabling innovation
-              </p>
+          <div
+            class="row align-items-center justify-content-center flex-row-reverse mb-4"
+          >
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon1.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center flex-row-reverse">
+                <div class="num ms-4">
+                  <p>06</p>
+                </div>
+                <p class="hd4">Security & Compliance Framework</p>
+              </div>
+              <div class="d-flex flex-row-reverse">
+                <div class="num-txt ms-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="text-end">
+                  Comprehensive safeguards for AI ethics, data security, and
+                  regulatory compliance that maintain stakeholder trust while
+                  enabling innovation.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -746,7 +922,9 @@
     <footer class="containerfluid" id="footer">
       <div class="container-ctm row g-4">
         <div class="footer-col-1 col-xl-3 col-md-6 col-12">
-          <a href="index.html"> <img src="assets/image/logo.webp" alt="" srcset="" /></a>
+          <a href="index.html">
+            <img src="assets/image/logo.webp" alt="" srcset=""
+          /></a>
           <p>
             We transform business vision into market-leading digital solutions.
             Our enterprise-grade implementations drive innovation, operational
@@ -757,33 +935,27 @@
           <h5 class="hd5">Company</h5>
           <ul>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="">Career</a></li>
-            <li><a href="">Privacy</a></li>
-            <li><a href="">Contact Us</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
         <div class="footer-col-3 col-xl-3 col-md-5 col-12">
           <h5 class="hd5">Services</h5>
           <ul>
-            <li><a href="">LLMs & Gen AI Strategy</a></li>
-            <li><a href="">Cloud Services & Platform</a></li>
-            <li><a href="">Big Data, Analytics & BI</a></li>
-            <li><a href="">Network & Optical Engineering</a></li>
-            <li><a href="">Cybersecurity</a></li>
-            <li><a href="">Enterprise Consultation</a></li>
-            <li><a href="">Product Engineering</a></li>
+            <li><a href="llm-gen-ai.html">LLMs & Gen AI Strategy</a></li>
+            <li><a href="cloud-service.html">Cloud Services & Platform</a></li>
+            <li><a href="big-data.html">Big Data, Analytics & BI</a></li>
+            <li><a href="enterprise.html">Enterprise Consultation</a></li>
           </ul>
         </div>
         <div class="footer-col-4 col-xl-2 col-md-3 col-6">
           <h5 class="hd5">Industries</h5>
           <ul>
-            <li><a href="">Manufacturing </a></li>
-            <li><a href="">HealthCare</a></li>
-            <li><a href="">Retail</a></li>
-            <li><a href="">Banking & Finance </a></li>
-            <li><a href="">Insurance</a></li>
-            <li><a href="">Digital(IOT)</a></li>
-            <li><a href="">Education</a></li>
+            <li><a href="manufacturing.html">Manufacturing </a></li>
+            <li><a href="healthcare.html">HealthCare</a></li>
+            <li><a href="retail.html">Retail</a></li>
+            <li><a href="digital.html">Digital(IOT)</a></li>
           </ul>
         </div>
         <div class="footer-col-5 col-xl-2 col-md-6">
@@ -840,9 +1012,13 @@
     </footer>
 
     <!-- javascript --------------------------------------------------------------------------------- -->
-
+    <!-- <script src="assets/js/custom-js/script.js"></script> -->
     <!-- jquery ------------------------------------------------------------------------------------- -->
+
     <script src="assets/js/jquery-js/jquery-3.7.1.min.js"></script>
+    <!-- counter js ---------------------------------------------------- -->
+    <script src="assets/js/counter-js/jquery.countup.min.js"></script>
+    <script src="assets/js/counter-js/jquery.waypoints.min.js"></script>
 
     <!-- bootstrap ----------------------------------------------------------------------------------- -->
     <script src="assets/js/bootstrap-js/bootstrap.bundle.min.js"></script>
@@ -851,6 +1027,9 @@
     <script src="assets/js/owlcarousel-js/owl.carousel.min.js"></script>
 
     <!-- custom js------------------------------------------------------------------------------------ -->
+
+    <script></script>
+
     <script src="assets/js/custom-js/script.js"></script>
   </body>
 </html>

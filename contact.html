@@ -65,10 +65,7 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Market</a>
+                  <a class="nav-link" href="about.html">Company</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -81,18 +78,66 @@
                     Services
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="llm-gen-ai.html"
+                        >LLMs & Gen AI Strategy</a
+                      >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="cloud-service.html"
+                        >Cloud Services & Platform</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="big-data.html"
+                        >Big Data, Analytics & BI</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="enterprise.html"
+                        >Enterprise Consultation</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Industries
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="manufacturing.html"
+                        >Manufacturing
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="healthcare.html"
+                        >HealthCare
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="retail.html">Retail</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="digital.html"
+                        >Digital(IOT)</a
+                      >
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
+                  <a class="nav-link" href="career.html">Careers</a>
                 </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li> -->
               </ul>
             </div>
           </div>
@@ -142,14 +187,11 @@
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
+                      <a class="nav-link" href="#">Company</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Market</a>
-                    </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
                       <a
-                        class="nav-link"
+                        class="nav-link dropdown-toggle"
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -157,10 +199,66 @@
                       >
                         Services
                       </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="llm-gen-ai.html"
+                            >LLMs & Gen AI Strategy</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="cloud-service.html"
+                            >Cloud Services & Platform</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="big-data.html"
+                            >Big Data, Analytics & BI</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="enterprise.html"
+                            >Enterprise Consultation</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Industries
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="manufacturing.html"
+                            >Manufacturing
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="healthcare.html"
+                            >HealthCare
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="retail.html">Retail</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="digital.html"
+                            >Digital(IOT)</a
+                          >
+                        </li>
+                      </ul>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Blog</a>
+                      <a class="nav-link" href="career.html">Careers</a>
                     </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li> -->
                   </ul>
                 </div>
               </div>
@@ -171,7 +269,9 @@
         <!-- side button ---------------------------------------------------------------------- -->
 
         <div class="btn-ctm">
-          <button id="#">Login</button>
+          <button onclick="window.location.href='contact.html'">
+            Contact Us
+          </button>
         </div>
       </div>
     </header>
@@ -203,21 +303,94 @@
     <section class="container-fluid" id="contact-sec">
       <div class="container-ctm">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-8 left d-flex align-items-center">
             <div class="form-wrap">
               <h2 class="hd2">Get in Touch</h2>
-              <p>
+              <p class="mb-4">
                 Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu
                 leo molestie vel, ornare non id blandit netus.
               </p>
-              <form action="" method="post">
-                <input type="text" name="fname" id="fname" placeholder="Name" />
-                <input type="email" name="email" id="femail" placeholder="" />
+              <form action="" method="post" id="f-form">
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  placeholder="Name *"
+                  required
+                />
+                <input
+                  type="email"
+                  name="femail"
+                  id="femail"
+                  placeholder="Email *"
+                  reqired
+                />
+                <input
+                  type="tel"
+                  name="fphone"
+                  id="fphone"
+                  placeholder="Phone number *"
+                  required
+                />
+                <select id="ffind-us" name="ffind-us" required>
+                  <option value="" disabled selected>
+                    How did you find us? *
+                  </option>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="fiat">Fiat</option>
+                  <option value="audi">Audi</option>
+                </select>
+                <input type="submit" value="Send" id="f-submit" />
               </form>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="contact-inner-wrap"></div>
+          <div class="col-md-4 right">
+            <div class="contact-inner-wrap">
+              <div class="top">
+                <p>Contact Information</p>
+                <p>Say something to start a live chat!</p>
+              </div>
+              <div class="middle">
+                <div class="d-flex">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  <div>
+                    <a href="tel:++1012 3456 789">+1012 3456 789</a>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <i class="fa-solid fa-envelope"></i>
+                  <div>
+                    <a href="mailto:info@bigbyte.ai">info@bigbyte.ai</a>
+                    <a href="mailto:sales@bigbyte.ai">sales@bigbyte.ai</a>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <div>
+                    <a href=""
+                      >132 Dartmouth Street Boston,<br />Massachusetts 02156
+                      United States</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="bottom">
+                <ul class="d-flex">
+                  <li>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-discord"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="deco1"></div>
+              <div class="deco2"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -240,33 +413,27 @@
           <h5 class="hd5">Company</h5>
           <ul>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="">Career</a></li>
-            <li><a href="">Privacy</a></li>
-            <li><a href="">Contact Us</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
         <div class="footer-col-3 col-xl-3 col-md-5 col-12">
           <h5 class="hd5">Services</h5>
           <ul>
-            <li><a href="">LLMs & Gen AI Strategy</a></li>
-            <li><a href="">Cloud Services & Platform</a></li>
-            <li><a href="">Big Data, Analytics & BI</a></li>
-            <li><a href="">Network & Optical Engineering</a></li>
-            <li><a href="">Cybersecurity</a></li>
-            <li><a href="">Enterprise Consultation</a></li>
-            <li><a href="">Product Engineering</a></li>
+            <li><a href="llm-gen-ai.html">LLMs & Gen AI Strategy</a></li>
+            <li><a href="cloud-service.html">Cloud Services & Platform</a></li>
+            <li><a href="big-data.html">Big Data, Analytics & BI</a></li>
+            <li><a href="enterprise.html">Enterprise Consultation</a></li>
           </ul>
         </div>
         <div class="footer-col-4 col-xl-2 col-md-3 col-6">
           <h5 class="hd5">Industries</h5>
           <ul>
-            <li><a href="">Manufacturing </a></li>
-            <li><a href="">HealthCare</a></li>
-            <li><a href="">Retail</a></li>
-            <li><a href="">Banking & Finance </a></li>
-            <li><a href="">Insurance</a></li>
-            <li><a href="">Digital(IOT)</a></li>
-            <li><a href="">Education</a></li>
+            <li><a href="manufacturing.html">Manufacturing </a></li>
+            <li><a href="healthcare.html">HealthCare</a></li>
+            <li><a href="retail.html">Retail</a></li>
+            <li><a href="digital.html">Digital(IOT)</a></li>
           </ul>
         </div>
         <div class="footer-col-5 col-xl-2 col-md-6">
@@ -326,6 +493,10 @@
 
     <!-- jquery ------------------------------------------------------------------------------------- -->
     <script src="assets/js/jquery-js/jquery-3.7.1.min.js"></script>
+
+    <!-- counter js ---------------------------------------------------- -->
+    <script src="assets/js/counter-js/jquery.countup.min.js"></script>
+    <script src="assets/js/counter-js/jquery.waypoints.min.js"></script>
 
     <!-- bootstrap ----------------------------------------------------------------------------------- -->
     <script src="assets/js/bootstrap-js/bootstrap.bundle.min.js"></script>

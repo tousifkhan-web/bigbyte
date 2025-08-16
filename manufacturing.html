@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- owl-carousel --------------------------------------------------------------------------------- -->
+    <link
+      rel="stylesheet"
+      href="assets/css/owlcarousel-css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/owlcarousel-css/owl.theme.default.min.css"
+    />
+
+    <!-- bootstrap ----------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/bootstrap-css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/bootstrap-css/bootstrap-reboot.min.css"
+    />
+
+    <!-- font-awesome -------------------------------------------------------------------------------- -->
+    <link
+      rel="stylesheet"
+      href="assets/css/fontawesome/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/fontawesome/css/brands.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome/css/solid.min.css" />
+
+    <!-- custom css --------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/custom-css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom-css/manufacturing.css" />
+
+    <!-- mediaquery --------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/custom-css/mediaquery.css" />
+  </head>
+  <body>
+    <!-- header -------------------------------------------------------------------------------- -->
+
+    <header class="container-fluid" id="header">
+      <div
+        class="container-ctm d-flex justify-content-between align-items-center"
+      >
+        <div class="logo navbar-brand">
+          <a href="index.html">
+            <img src="assets/image/logo.webp" alt="Bigbyte Logo" />
+          </a>
+        </div>
+
+        <!-- menu --------------------------------------------------------------- -->
+   <nav class="navbar navbar-expand-lg">
+          <div class="">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">Company</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="llm-gen-ai.html"
+                        >LLMs & Gen AI Strategy</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="cloud-service.html"
+                        >Cloud Services & Platform</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="big-data.html"
+                        >Big Data, Analytics & BI</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="enterprise.html"
+                        >Enterprise Consultation</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Industries
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="manufacturing.html">Manufacturing </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="healthcare.html">HealthCare </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="retail.html">Retail</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="digital.html">Digital(IOT)</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="career.html">Careers</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Mobile menu toogle ------------------------------------------------- -->
+        <button
+          class="mobile-menu-toggle"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasExample"
+          role="button"
+          aria-controls="offcanvasExample"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- mobile menu overlay ------------------------------------------------- -->
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+              Offcanvas
+            </h5> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav
+              class="navbar navbar-expand align-items-center justify-content-center"
+            >
+              <div class="">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul
+                    class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column align-items-center"
+                  >
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Company</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Services
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="llm-gen-ai.html"
+                            >LLMs & Gen AI Strategy</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="cloud-service.html"
+                            >Cloud Services & Platform</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="big-data.html"
+                            >Big Data, Analytics & BI</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="enterprise.html"
+                            >Enterprise Consultation</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Industries
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="manufacturing.html">Manufacturing </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="healthcare.html">HealthCare </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="retail.html">Retail</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="digital.html">Digital(IOT)</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="career.html">Careers</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- side button ---------------------------------------------------------------------- -->
+
+          <div class="btn-ctm">
+  <button onclick="window.location.href='contact.html'">Contact Us</button>
+</div>
+      </div>
+    </header>
+
+    <!-- manufacturing banner ------------------------------------------------------------------------------------ -->
+
+    <section class="container-fluid" id="llm-banner">
+      <div class="container-ctm row align-items-center">
+        <div class="col-md-12 align-items-center banner-text">
+          <h1 class="abt-hd1">
+            Revolutionizing Manufacturing 
+            <span class="spl-txt"
+              ><br />
+              with Smart AI Solutions</span
+            >
+          </h1>
+          <span class="bnr-decoration"></span>
+          <p class="bnr-p-txt">
+           Transform your factory operations with BigByte's enterprise-grade AI solutions that enhance predictive maintenance, <br>optimize production processes, and create intelligent, data-driven manufacturing ecosystems for Industry 4.0.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- manufacturing about section------------------------------------------------------------ -->
+
+    <section class="container-fluid" id="about">
+      <div class="container-ctm">
+        <div class="row justify-content-between align-items-center gap-5">
+          <div class="left col-lg-5">
+            <img src="assets/image/manufacturing-removebg-preview.png" alt="" srcset="" />
+          </div>
+          <div class="right col-lg-6">
+            <!-- <h3 class="hd3 mb-3">
+              Transform Your Business with
+              <span class="spl-txt">Enterprise AI Solutions</span>
+            </h3> -->
+            <p class="mb-4">
+             The manufacturing industry is experiencing a profound transformation driven by artificial intelligence and advanced data analytics. Today's smart factories require sophisticated AI systems that can optimize operations, predict maintenance needs, and ensure product quality with unprecedented precision.<br><br>
+
+At BigByte, we partner with leading manufacturers to implement enterprise-grade AI solutions that transform traditional production facilities into intelligent, adaptive manufacturing ecosystems. Our AI-powered solutions help you reduce downtime, enhance product quality, and gain sustainable competitive advantages in an increasingly automated industry landscape.
+            </p>
+            <!-- <div>
+              <a class="spl-btn" href="#">Transform Your Business</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- llm portfolio section ------------------------------------------------------- -->
+    <section class="container-fluid" id="llm-portfolio">
+      <div class="container-ctm">
+        <h2 class="hd2">
+          Enterprise AI Use <br /><span class="spl-txt">Cases for Manufacturing </span>
+        </h2>
+        <div class="row bottom">
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/artificial-intelligence.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">Predictive Maintenance</p>
+            <p class="mb-3">
+            Computer vision and deep learning algorithms inspect products at high speed, detecting defects invisible to the human eye, ensuring consistent quality standards across your production lines.
+<br> <strong>Impact:</strong> Increases defect detection accuracy by 90% while processing thousands of units per hour, reducing customer returns by up to 65%.
+            </p>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/machine-learning.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">Intelligent Quality Control</p>
+            <p class="mb-3">
+            Computer vision and deep learning algorithms inspect products at high speed, detecting defects invisible to the human eye, ensuring consistent quality standards across your production lines.
+
+<br> <strong>Impact:</strong>  Increases defect detection accuracy by 90% while processing thousands of units per hour, reducing customer returns by up to 65%.
+            </p>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/bot.png"
+              alt=""
+              srcset=""
+            />
+          <p class="hd4 mb-3 mt-5">AI-Powered Automation</p>
+            <p class="mb-3">
+             Generative AI and machine learning enhance robotic systems, enabling collaborative robots that adapt to changing production requirements without extensive reprogramming by skilled engineers.
+
+<br> <strong>Impact:</strong> Reduces robot deployment time by 80% while increasing production flexibility and enabling more complex manufacturing processes.
+            </p>
+          </div>
+            <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/artificial-intelligence.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">Supply Chain Optimization</p>
+            <p class="mb-3">
+            Our AI algorithms analyze historical data, market trends, and real-time variables to optimize inventory levels, logistics, and raw material procurement, creating resilient supply chains.
+
+<br> <strong>Impact:</strong> Reduces inventory costs by 10-15% while improving on-time delivery by 25% and enhancing supply chain transparency.
+            </p>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/machine-learning.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">Digital Twins & Simulations</p>
+            <p class="mb-3">
+             Create virtual replicas of your physical manufacturing systems, enabling real-time monitoring, scenario testing, and process optimization without disrupting actual production.
+
+<br> <strong>Impact:</strong> Reduces production planning time by 40% and increases overall equipment effectiveness (OEE) by 15-20%.
+            </p>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex flex-column">
+            <img
+              src="assets/image/bot.png"
+              alt=""
+              srcset=""
+            />
+            <p class="hd4 mb-3 mt-5">Energy & Sustainability Optimization</p>
+            <p class="mb-3">
+           AI-driven systems monitor and optimize energy consumption across your manufacturing facilities, identifying inefficiencies and reducing environmental impact while cutting operational costs.
+
+<br> <strong>Impact:</strong> Reduces energy consumption by 15-30% and helps achieve sustainability goals with measurable environmental impact metrics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- llm success section ------------------------------------------------------------ -->
+
+    <section class="container-fluid" id="llm-success">
+      <div class="container-ctm">
+        <h2 class="hd2 text-center">Real-World Manufacturing </h2>
+        <h2 class="hd2 text-center mb-5">
+          <span class="spl-txt">Transformation</span>
+        </h2>
+        <div class="row justify-content-evenly g-5">
+          <div
+            class="col-md-5 col-xl-4 d-flex flex-column align-items-left success-card"
+          >
+            <div class="success-img mb-4">
+              <span class="success-icon"
+                ><img class="health-icon" src="assets/image/medical.png">
+              </span>
+            </div>
+            <p class="hd4 mb-4">Smart Factory Implementation for Automotive Components</p>
+            <p class="mb-4">
+             For a global automotive parts manufacturer, we developed an integrated AI ecosystem that combined predictive maintenance, quality control, and digital twin technologies. The system incorporated real-time data from hundreds of IoT sensors across multiple production lines, creating a fully optimized manufacturing environment.
+            </p>
+            <ul>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />35% reduction in production line downtime
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />28% improvement in overall equipment effectiveness (OEE)
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />$4.2 million annual savings in maintenance and operational costs
+              </li>
+            </ul>
+
+          </div>
+          <div
+            class="col-md-5 col-xl-4 d-flex flex-column  success-card"
+          >
+            <div class="success-img mb-4">
+              <span class="success-icon"
+                >   <span class="success-icon"
+                ><img class="health-icon" src="assets/image/automation.png">
+              </span>
+              </span>
+            </div>
+            <p class="hd4 mb-4">Computer Vision for Precision Electronics Quality Assurance</p>
+            <p class="mb-4">
+             We helped a precision electronics manufacturer implement an AI-powered visual inspection system for PCB assembly. The solution utilized deep learning algorithms to detect microscopic defects, component misalignments, and solder joint issues that were previously missed by human inspectors and traditional automated systems.
+            </p>
+             <ul>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />28%
+                reduction in average commute times with adaptive traffic
+                management
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />35%
+                energy savings through intelligent street lighting systems
+              </li>
+              <li class="d-flex align-items-center gap-2 mb-2">
+                <img src="assets/image/bullet2.png" alt="" srcset="" />42%
+                improvement in air quality monitoring and response
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- llm-impact section ---------------------------------------------------------------- -->
+
+    <section class="container-fluid" id="llm-impact">
+      <div class="container-ctm">
+        <h2 class="hd2">
+          BigByte: Your Partner in <br /><span class="spl-txt"
+            >Manufacturing AI Transformation
+          </span>
+        </h2>
+        <div class="buttom-wrap">
+          <div class="row align-items-center justify-content-center mb-4">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon6.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center">
+                <div class="num me-4">
+                  <p>01</p>
+                </div>
+                <p class="hd4">Industry-Specific AI Models</p>
+              </div>
+              <div class="d-flex">
+                <div class="num-txt me-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="hd4">
+                 Industry-Specific AI Models tailored for manufacturing use cases, delivering 30-40% higher accuracy than general-purpose algorithms
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row align-items-center justify-content-center flex-row-reverse mb-4"
+          >
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon15.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center flex-row-reverse">
+                <div class="num ms-4">
+                  <p>02</p>
+                </div>
+                <p class="hd4">End-to-End Implementation </p>
+              </div>
+              <div class="d-flex flex-row-reverse">
+                <div class="num-txt ms-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="text-end">
+                 End-to-End Implementation from strategy and data engineering to model deployment and continuous optimization
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center justify-content-center mb-4">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon4.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center">
+                <div class="num me-4">
+                  <p>03</p>
+                </div>
+                <p class="hd4">Edge Computing Solutions</p>
+              </div>
+              <div class="d-flex">
+                <div class="num-txt me-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="hd4">
+                 Edge Computing Solutions enabling real-time processing and decision-making on the factory floor, minimizing latency
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row align-items-center justify-content-center flex-row-reverse mb-4"
+          >
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon3.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center flex-row-reverse">
+                <div class="num ms-4">
+                  <p>04</p>
+                </div>
+                <p class="hd4">Pre-Built Manufacturing AI Accelerators</p>
+              </div>
+              <div class="d-flex flex-row-reverse">
+                <div class="num-txt ms-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="text-end">
+                 Pre-Built Manufacturing AI Accelerators that reduce time-to-value by 40-60% compared to ground-up development
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center justify-content-center mb-4">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon2.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center">
+                <div class="num me-4">
+                  <p>05</p>
+                </div>
+                <p class="hd4">Industrial Domain Expertise</p>
+              </div>
+              <div class="d-flex">
+                <div class="num-txt me-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="hd4">
+                  Industrial Domain Expertise spanning automotive, aerospace, electronics, pharmaceuticals, and discrete manufacturing
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row align-items-center justify-content-center flex-row-reverse mb-4"
+          >
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon1.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center flex-row-reverse">
+                <div class="num ms-4">
+                  <p>06</p>
+                </div>
+                <p class="hd4">Technology Ecosystem Integration</p>
+              </div>
+              <div class="d-flex flex-row-reverse">
+                <div class="num-txt ms-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="text-end">
+                 Technology Ecosystem Integration with ERP, MES, PLM, SCM, and industrial IoT platforms
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center justify-content-center mb-4">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon2.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center">
+                <div class="num me-4">
+                  <p>07</p>
+                </div>
+                <p class="hd4">Proven Deployment Models</p>
+              </div>
+              <div class="d-flex">
+                <div class="num-txt me-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="hd4">
+                  Proven Deployment Models that minimize disruption while maximizing value realization
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row align-items-center justify-content-center flex-row-reverse mb-4"
+          >
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon1.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center flex-row-reverse">
+                <div class="num ms-4">
+                  <p>08</p>
+                </div>
+                <p class="hd4">Manufacturing Cybersecurity</p>
+              </div>
+              <div class="d-flex flex-row-reverse">
+                <div class="num-txt ms-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="text-end">
+                  Manufacturing Cybersecurity with OT/ICS protection, supply chain security, and IP safeguards. Learn about our industrial security solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+           <div class="row align-items-center justify-content-center mb-4">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon2.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center">
+                <div class="num me-4">
+                  <p>09</p>
+                </div>
+                <p class="hd4">IoT Integration Expertise</p>
+              </div>
+              <div class="d-flex">
+                <div class="num-txt me-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="hd4">
+                  IoT Integration Expertise connecting your physical equipment with AI systems through advanced sensor networks and data pipelines
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row align-items-center justify-content-center flex-row-reverse mb-4"
+          >
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon1.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center flex-row-reverse">
+                <div class="num ms-4">
+                  <p>10</p>
+                </div>
+                <p class="hd4">Enterprise-Grade Security & Governance</p>
+              </div>
+              <div class="d-flex flex-row-reverse">
+                <div class="num-txt ms-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="text-end">
+                  Enterprise-Grade Security & Governance ensuring compliance with industrial standards and data protection regulations
+                </p>
+              </div>
+            </div>
+          </div>
+           </div>
+           <div class="row align-items-center justify-content-center mb-4">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon2.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center">
+                <div class="num me-4">
+                  <p>11</p>
+                </div>
+                <p class="hd4">Cross-Functional Expertise</p>
+              </div>
+              <div class="d-flex">
+                <div class="num-txt me-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="hd4">
+                 Cross-Functional Expertise spanning data science, industrial engineering, and manufacturing operations
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row align-items-center justify-content-center flex-row-reverse mb-4"
+          >
+            <div class="col-lg-5"></div>
+            <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+              <img src="assets/image/line-icon1.png" alt="" srcset="" />
+            </div>
+            <div class="col-lg-5 col-md-9 content">
+              <div class="d-flex align-items-center flex-row-reverse">
+                <div class="num ms-4">
+                  <p>12</p>
+                </div>
+                <p class="hd4">Outcomes-Based Engagement Models</p>
+              </div>
+              <div class="d-flex flex-row-reverse">
+                <div class="num-txt ms-4">
+                  <img src="assets/image/line.png" alt="" srcset="" />
+                </div>
+                <p class="text-end">
+                  Outcomes-Based Engagement Models aligning our success metrics with your business objectives
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- counter section ------------------------------------------------------------ -->
+
+    <section class="container-fluid" id="manuf-counter">
+      <section class="container-ctm">
+        <div class="counter-wrap row">
+          <div class="col-lg-4 col-md-6">
+            <p class="count-num">
+              <span class="counter">35</span><span>%</span>
+            </p>
+            <p>Reduction in unplanned downtime with our AI-powered predictive maintenance</p>
+            <!-- <p>Average accross all implementations</p> -->
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <p class="count-num">
+              <span class="counter">35</span><span>%</span>
+            </p>
+            <p>Improvement in operational efficiency through AI-driven process optimization</p>
+            <!-- <p>Average accross all implementations</p> -->
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <p class="count-num">
+              <span class="counter">4</span><span>X</span>
+            </p>
+            <p>ROI on manufacturing AI investments through our implementation methodology</p>
+            <!-- <p>Average accross all implementations</p> -->
+          </div>
+          <!-- <div class="col-lg-3 col-md-6">
+            <p class="count-num">
+              <span class="counter">35</span><span>%</span>
+            </p>
+            <p>infrastructure Cost reduction</p>
+            <p>Average accross all implementations</p>
+          </div> -->
+        </div>
+      </section>
+    </section>
+
+    
+    <!-- llm success section ------------------------------------------------------------ -->
+
+    <section class="container-fluid" id="llm-success">
+      <div class="container-ctm">
+        <h2 class="hd2 text-center">Our Enterprise</h2>
+        <h2 class="hd2 text-center mb-5">
+          <span class="spl-txt"> Technology Ecosystem</span>
+        </h2>
+        <p class="sub-txt">
+          BigByte partners with the world's leading technology providers to deliver enterprise-grade AI solutions for manufacturing. Our technology partnerships ensure that you benefit from best-in-class infrastructure, frameworks, and platforms combined with our specialized manufacturing domain expertise.
+        </p>
+        <div class="row justify-content-evenly g-5">
+          <div
+            class="col-md-5 col-xl-2 d-flex flex-column align-items-center success-card"
+          >
+            <div class="success-img">
+              <span class="success-icon"
+                ><img src="assets/image/aws-logo.jpg">
+              </span>
+            </div>
+            <p class="hd4 mb-4">AWS</p>
+          </div>
+          <div
+            class="col-md-5 col-xl-2 d-flex flex-column align-items-center success-card"
+          >
+            <div class="success-img">
+              <span class="success-icon"
+                ><img src="assets/image/ms-logo.png">
+              </span>
+            </div>
+            <p class="hd4 mb-4">Azure</p>
+          </div>
+          <div
+            class="col-md-5 col-xl-2 d-flex flex-column align-items-center success-card"
+          >
+            <div class="success-img">
+              <span class="success-icon"
+                ><img src="assets/image/snowflake.png">
+              </span>
+            </div>
+            <p class="hd4 mb-4">Snowflake</p>
+          </div>
+          <div
+            class="col-md-5 col-xl-2 d-flex flex-column align-items-center success-card"
+          >
+            <div class="success-img">
+              <span class="success-icon"
+                ><img src="assets/image/nvidia.png">
+                </svg>
+              </span>
+            </div>
+            <p class="hd4 mb-4">NVIDIA</p>
+          </div>
+          <div
+            class="col-md-5 col-xl-2 d-flex flex-column align-items-center success-card"
+          >
+            <div class="success-img">
+              <span class="success-icon"
+                ><img src="assets/image/data-bricks.jpg">
+                </svg>
+              </span>
+            </div>
+            <p class="hd4 mb-4">Databricks</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+        <!-- testimonial -------------------------------------------------------------------------------- -->
+
+    <section class="container-fluid" id="testimonial">
+      <div class="container-ctm">
+        <div class="top mb-5 d-flex flex-column align-items-center">
+          <h2 class="hd2">
+            <span class="spl-txt">Our Strategic </span>
+          </h2>
+          <h2 class="hd2 mb-4 text-center">Technology Advantages</h2>
+          <!-- <p class="text-center">
+            Reduce manual work by 50% and improve accuracy by 90%
+          </p> -->
+        </div>
+        <div class="bottom row g-4">
+          <div class="col-md-6 col-xl-3 d-flex flex-column">
+            <div
+              class="company-logo d-flex justify-content-center align-items-center"
+            >
+              <img src="assets/image/brain1.svg" alt="" srcset="" />
+            </div>
+            <div class="card-ctm">
+              <p class="num">1.</p>
+              <h4 class="hd4">Industrial IoT Integration</h4>
+              <p class="card-txt">
+               We leverage AWS's IoT services, Azure IoT Hub, and Google Cloud's IoT platform to create comprehensive sensor networks that capture critical operational data from manufacturing equipment, enabling real-time monitoring and predictive analytics.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-xl-3 d-flex flex-column flex-xl-column-reverse"
+          >
+            <div
+              class="company-logo d-flex justify-content-center align-items-center"
+            >
+              <img src="assets/image/network1.svg" alt="" srcset="" />
+            </div>
+            <div class="card-ctm">
+              <p class="num">2.</p>
+              <h4 class="hd4">High-Performance Computing</h4>
+              <p class="card-txt">
+              Through our partnership with NVIDIA, we implement GPU-accelerated computing infrastructure for training sophisticated AI models for visual inspection, defect detection, and complex manufacturing process optimization.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3 d-flex flex-column">
+            <div
+              class="company-logo d-flex justify-content-center align-items-center"
+            >
+              <img src="assets/image/analytics1.svg" alt="" srcset="" />
+            </div>
+            <div class="card-ctm">
+              <p class="num">3.</p>
+              <h4 class="hd4">Data Orchestration Excellence</h4>
+              <p class="card-txt">
+              Our expertise with Snowflake's Data Cloud and Databricks' Lakehouse Platform enables us to integrate disparate manufacturing data sources into unified analytics platforms that power real-time decision intelligence across your facilities.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-xl-3 d-flex flex-column flex-xl-column-reverse"
+          >
+            <div
+              class="company-logo d-flex justify-content-center align-items-center"
+            >
+              <img src="assets/image/cloud1.svg" alt="" srcset="" />
+            </div>
+            <div class="card-ctm">
+              <p class="num">4.</p>
+              <h4 class="hd4">Edge Computing Deployment</h4>
+              <p class="card-txt">
+               We design and implement edge computing solutions that process critical data directly on the factory floor, minimizing latency for time-sensitive applications while reducing bandwidth requirements for your IT infrastructure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact ----------------------------------------------------------------------------------- -->
+
+    <section class="container-fluid" id="contact">
+      <div class="container-ctm">
+        <div
+          class="contact-cta d-flex justify-content-between align-items-center"
+        >
+          <div class="left">
+            <p class="hd2">Ready to Get Measurable AI Results in 90 Days?</p>
+          </div>
+          <div class="right">
+            <a href="#" class="d-flex align-items-center"
+              ><p>Get in touch</p>
+              <span class="spl-txt"
+                ><i class="fa-solid fa-arrow-right"></i></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -------------------------------------------------------------------------------------- -->
+    <footer class="containerfluid" id="footer">
+      <div class="container-ctm row g-4">
+        <div class="footer-col-1 col-xl-3 col-md-6 col-12">
+          <a href="index.html">
+            <img src="assets/image/logo.webp" alt="" srcset=""
+          /></a>
+          <p>
+            We transform business vision into market-leading digital solutions.
+            Our enterprise-grade implementations drive innovation, operational
+            excellence, and sustainable competitive advantage.
+          </p>
+        </div>
+        <div class="footer-col-2 col-xl-2 col-md-4 col-6">
+          <h5 class="hd5">Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-3 col-xl-3 col-md-5 col-12">
+          <h5 class="hd5">Services</h5>
+          <ul>
+            <li><a href="llm-gen-ai.html">LLMs & Gen AI Strategy</a></li>
+            <li><a href="cloud-service.html">Cloud Services & Platform</a></li>
+            <li><a href="big-data.html">Big Data, Analytics & BI</a></li>
+            <li><a href="enterprise.html">Enterprise Consultation</a></li>
+           </ul>
+        </div>
+        <div class="footer-col-4 col-xl-2 col-md-3 col-6">
+          <h5 class="hd5">Industries</h5>
+          <ul>
+            <li><a href="manufacturing.html">Manufacturing </a></li>
+            <li><a href="healthcare.html">HealthCare</a></li>
+            <li><a href="retail.html">Retail</a></li>
+            <li><a href="digital.html">Digital(IOT)</a></li>
+            </ul>
+        </div>
+        <div class="footer-col-5 col-xl-2 col-md-6">
+          <h5 class="hd5">Follow Us</h5>
+          <ul class="d-flex align-items-center">
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-gitlab"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-telegram"></i></a>
+            </li>
+            <li class="me-3">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-figma"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <svg
+          class="editorial"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 12"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    58 18 88 18
+    v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2" />
+            <use xlink:href="#gentle-wave" x="50" y="3" fill="#3461c1" />
+            <use xlink:href="#gentle-wave" x="50" y="6" fill="#2d55aa" />
+          </g>
+        </svg>
+      </div>
+    </footer>
+
+    <!-- javascript --------------------------------------------------------------------------------- -->
+
+    <!-- jquery ------------------------------------------------------------------------------------- -->
+    <script src="assets/js/jquery-js/jquery-3.7.1.min.js"></script>
+
+    <!-- counter js ---------------------------------------------------- -->
+    <script src="assets/js/counter-js/jquery.countup.min.js"></script>
+    <script src="assets/js/counter-js/jquery.waypoints.min.js"></script>
+
+    <!-- bootstrap ----------------------------------------------------------------------------------- -->
+    <script src="assets/js/bootstrap-js/bootstrap.bundle.min.js"></script>
+
+    <!-- owl-carousel --------------------------------------------------------------------------------- -->
+    <script src="assets/js/owlcarousel-js/owl.carousel.min.js"></script>
+
+    <!-- custom js------------------------------------------------------------------------------------ -->
+    <script src="assets/js/custom-js/script.js"></script>
+  </body>
+</html>
